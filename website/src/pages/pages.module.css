@@ -1,0 +1,190 @@
+/* UBC Colors
+UBC Blue: #002145
+Blue 1:   #0055B7
+Blue 2:   #00A7E1
+Blue 3:   #40B4E5
+Blue 4:   #6EC4E8
+Blue 5:   #97D4E9
+White:    #FFFFFF */
+
+.pagecontainer{
+  padding: 1rem;
+}
+.pagecontainer h1, .pagecontainer h2, .pagecontainer h3{
+    /* font-family: 'Noto Serif','Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+    color: #002145;
+    /* border-right: 1px solid black;
+    border-left: 1px solid black; */
+}
+.pagecontainer p{
+  text-indent: 2rem;
+  text-align: justify;
+}
+.pagecontainer a{
+  color: #212529;
+}
+.pagecontainer a:hover{
+  border-bottom: 1px solid #002145;
+}
+
+
+.container1 {
+  /* position: relative; */
+
+  background-image: url("../images/main1.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1280px;
+  height: 512px;
+  margin: 0 auto;
+
+  display: table;
+  /* overflow-y: auto; */
+}
+.container2{
+  /* background-color: #97D4E9; */
+  border-top: 1px solid #002145;
+  /* background-color: #93abd1; */
+  background-color: #e0f2ff;
+  max-width: 1280px;
+  margin: 0 auto;
+    /* opacity: .8; */
+}
+
+/* .mainpic {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.mainpicdiv {
+  position: absolute;
+  left: 0;
+
+  width: 29%;
+} */
+
+
+.intro1 {
+  width: 100%;
+  padding-left: 400px;
+  padding-right: 3rem;
+  text-align: justify;
+
+  /* height: 512px;
+  overflow: auto; */
+
+  display: table-cell;
+  vertical-align: middle;
+
+  color: white;
+  font-size: 1.1rem;
+  /* text-shadow: -1px 0px white, 0 1px white, 1px 0 white, 0 -1px white; */
+
+  /* position: absolute; */
+  /* top: 0; */
+  /* height: 100%; */
+}
+.intro1 p, .intro2 p{
+  margin: 0;
+}
+
+.intro2{
+  display: none;
+  text-align: justify;
+}
+.timelinecontainer{
+  width: 60%;
+  margin: auto;
+}
+.timelineheader{
+  width: 60%;
+  margin: auto;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  padding-top: 2rem;
+  /* background-color: silver; */
+  /* border-radius: 2px; */
+  color: #002145;
+}
+.timelineheader h3{
+  /* margin: 0; */
+  color: #002145;
+}
+
+.table {
+  margin-bottom: 1rem;
+  /* border-radius: 50px; */
+}
+
+.table th{
+  text-align: center;
+  padding: .25rem;
+  /* background-color: #CCCCCC; */
+  background-color: #002145;
+  color: white;
+}
+.table td{
+  /* background-color: #e6f2ff; */
+  background-color: #cae4f7;
+  padding: .25rem;
+}
+.table td{
+  border-bottom: grey solid 1px;
+}
+
+.youtube_icon{
+  height: 1.2rem;
+  /* margin:.25rem; */
+  /* background-color: #e0f2ff; */
+}
+
+@media only screen and (max-width: 992px){
+  .container1{
+    background-image: url("../images/main1.jpg");
+    /* background-position: left; */
+    height: 400px;
+    display: block;
+  }
+  .intro1{
+    display: none;
+  }
+  .intro2{
+    display: block;
+    padding: 1rem;
+  }
+
+  .timelinecontainer {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .timelineheader{
+    width: 100%;
+  }
+}
+
+.biostrong{
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px){
+  .container1{
+    background-image: url("../images/main3.jpg");
+    /* height: 400px; */
+  }
+  /* .mainpicdiv {
+    position: relative;
+    width: 60%;
+    margin: auto;
+  } */
+  .pagecontainer h1{
+    text-align: center;
+    border-bottom: 2px solid #002145;
+      /* border-right: 1px solid black;
+      border-left: 1px solid black; */
+  }
+  .table td{
+    font-size: .6rem;
+  }
+}
