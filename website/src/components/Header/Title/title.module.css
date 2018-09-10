@@ -1,0 +1,44 @@
+.container {
+  background: #002145;
+}
+
+.titlediv {
+  /* width: 80%; */
+  max-width: 1280px;
+  margin: auto;
+  white-space: nowrap;
+  overflow-x: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.namecontainer{
+  flex: 1 1 auto;
+}
+
+.namecontainer h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+}
+
+.sub {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.logocontainer{
+  flex: 0 1 auto;
+}
+
+.logo{
+  height: 3.5rem;
+}

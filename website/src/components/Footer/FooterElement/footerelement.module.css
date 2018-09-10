@@ -1,0 +1,31 @@
+.container {
+  margin: 0;
+  width: 100%;
+  padding:0;
+  display: table;
+}
+
+.container p{
+  font-size: .75rem;
+  line-height: 1;
+}
+
+.row {
+  display: table-row;
+}
+
+.col1, .col2 {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+}
+.col1 {
+  width: 2rem;
+}
+
+.icon {
+  height: 1.5rem;
+  /* width: 100px; */
+  margin: 0;
+  vertical-align: middle;
+}

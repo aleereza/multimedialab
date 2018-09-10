@@ -1,0 +1,28 @@
+.container {
+   padding-top: 0;
+   padding-bottom: 4.25rem;
+   padding-left: 0;
+   padding-right: 0;
+   /* width: 80%; */
+   max-width: 1280px;
+   margin: auto;
+   background-color: #e0f2ff;
+}
+
+.addpadding {
+  padding-top: 3.75rem;
+}
+
+.consttoppadding {
+  padding-top: 4.5rem;
+}
+
+
+
+/* 100% Width on Smaller Screens */
+@media only screen and (max-width: 992px){
+    .container {
+        width: 100%;
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,23 @@
+.container {
+  /* z-index: 500; */
+}
+
+.navbar_container{
+  display: none;
+}
+
+.navslide_container{
+
+}
+
+
+
+
+@media only screen and (min-width: 992px){
+    .navslide_container {
+      display: none;
+    }
+    .navbar_container{
+      display: block;
+    }
+}
