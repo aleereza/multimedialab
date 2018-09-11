@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 import styles from "./navslidelink.module.css"
 
 class NavSlideLink extends React.Component {
@@ -12,7 +12,7 @@ class NavSlideLink extends React.Component {
       <div className={styles.container}>
         <Link to={this.props.to}>
           <h5 className={styles.link}>
-            {this.props.children}
+            {this.props.name}
           </h5>
         </Link>
       </div>

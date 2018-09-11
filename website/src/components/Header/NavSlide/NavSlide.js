@@ -1,21 +1,12 @@
 import React from 'react'
-// import styles from "./navslide.module.css"
-// import cx from "classnames";
-// import MenuButton from "../MenuButton/MenuButton"
-import Link from 'gatsby-link'
-// import logo from "../../../images/UBC-logo-white.png"
-// import "./navslide.module.css"
-
+import { StaticQuery, graphql } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
+import NavSlideLink from "../NavSlideLink/NavSlideLink"
 
 class NavSlide extends React.Component {
-  // showSettings (event) {
-  //   event.preventDefault();
-  //
-  // }
-
 
   render () {
+
     var styles = {
       bmBurgerButton: {
         position: 'fixed',
@@ -54,22 +45,35 @@ class NavSlide extends React.Component {
       }
     }
     return (
-      <Menu right styles={ styles }>
-        <ul>
-          <li>
-            l1
-          </li>
-          <li>
-            l2
-          </li>
-          <li>
-            l3
-          </li>
-        </ul>
-      </Menu>
+      <StaticQuery
+        query={
+          graphql`
+            query {
+              allNav: allNavCsv {
+                edges {
+                  node {
+                    name
+                    to
+                  }
+                }
+              }
+            }
+          `
+        }
+
+        render={data => (
+          <Menu right styles={ styles }>
+            {data.allNav.edges.map((row,i) => (
+              <NavSlideLink key={i}
+                name={row.node.name}
+                to={row.node.to}
+              />
+            ))}
+          </Menu>
+        )}
+      />
     );
   }
 }
 
 export default NavSlide
-// <Menu right width={'100%'} isOpen={false}>

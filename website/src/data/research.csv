@@ -1,0 +1,5 @@
+id,title,short,long,image_s,image_l
+1,"title 1","this is a sample short introduction for research 1","this is a sample long introduction for research 1","./images/research-s-1.jpg"
+2,"title 2","this is a sample short introduction for research 2","this is a sample long introduction for research 2","./images/research-s-2.jpg"
+3,"title 3","this is a sample short introduction for research 3","this is a sample long introduction for research 3","./images/research-s-3.jpg"
+4,"title 4","this is a sample short introduction for research 4","this is a sample long introduction for research 4","./images/research-s-4.jpg"
