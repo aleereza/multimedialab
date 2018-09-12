@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.0.0-rc.15",
+    "gatsby": "^2.0.0-rc.19",
     "gatsby-image": "^1.0.55",
     "gatsby-plugin-lodash": "^1.0.11",
     "gatsby-plugin-sharp": "^1.6.48",

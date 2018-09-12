@@ -16,7 +16,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        test header
+        <Title/>
         <NavBar>
         link1
         link2

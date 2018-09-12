@@ -16,7 +16,7 @@ class NavBarLink extends React.Component {
         <Link to={this.props.to}>
           <div className={styles.innercontainer}>
             <p className={styles.link}>
-              {this.props.children}
+              {this.props.name}
             </p>
           </div>
         </Link>

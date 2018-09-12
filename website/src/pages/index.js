@@ -19,11 +19,13 @@ class IndexPage extends React.Component {
           <p>My research has mainly focused on the field of Signal Processing, dealing with the analysis, interpretation, and manipulation of signals that represent observable quantities. An unexhaustive list of these signals include audio, video, speech, image, geophysical, sonar, radar, medical, musical and communication. My research involves solving real-life issues using  signal processing theories and techniques.
           </p>
         </div>
-        <ResearchTile
-          title={researchdata[0].node.title}
-          short={researchdata[0].node.short}
-          image={researchimagesdata[0].node.childImageSharp.fixed}
-        />
+        {[0,1,2].map((i) => (
+          <ResearchTile
+            title={researchdata[i].node.title}
+            short={researchdata[i].node.short}
+            image={researchimagesdata[i].node.childImageSharp.sizes}
+          />
+        ))}
       </Layout>
     )
   }
@@ -47,8 +49,8 @@ export const pageQuery = graphql`
           childImageSharp {
             # Specify the image processing specifications right in the query.
             # Makes it trivial to update as your page's design changes.
-            sizes(width: 125, height: 125) {
-              ...GatsbyImageSharpFixed
+            sizes(maxWidth: 1280) {
+              ...GatsbyImageSharpSizes_tracedSVG
             }
           }
         }

@@ -22,17 +22,17 @@
 .namecontainer h1 {
   margin: 0;
   padding: 0;
-  font-weight: 600;
+  /* font-weight: 600;
   line-height: 1;
   color: #FFFFFF;
-  font-size: 2.5rem;
+  font-size: 2.5rem; */
 }
 
 .sub {
   margin: 0;
-  font-weight: 500;
-  line-height: 1;
-  color: #FFFFFF;
+  /* font-weight: 500; */
+  /* line-height: 1; */
+  /* color: #FFFFFF; */
 }
 
 .logocontainer{
