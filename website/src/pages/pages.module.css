@@ -6,3 +6,13 @@ Blue 3:   #40B4E5
 Blue 4:   #6EC4E8
 Blue 5:   #97D4E9
 White:    #FFFFFF */
+
+
+.studentstile_container {
+  display: flex;
+
+}
+
+.studentstile{
+  flex: 0 1 1;
+}

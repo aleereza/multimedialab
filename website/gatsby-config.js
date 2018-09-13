@@ -22,8 +22,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images/`,
+        name: `research_images`,
+        path: `${__dirname}/src/images/research/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `students_images`,
+        path: `${__dirname}/src/images/students/`,
       },
     },
     `gatsby-transformer-csv`,

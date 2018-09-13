@@ -2,17 +2,18 @@ import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
 import NavSlideLink from "../NavSlideLink/NavSlideLink"
+// import styles from "./navslide.module.css"
 
 class NavSlide extends React.Component {
 
   render () {
 
-    var styles = {
+    var menuStyles = {
       bmBurgerButton: {
         position: 'fixed',
         width: '36px',
         height: '30px',
-        left: '36px',
+        right: '36px',
         top: '36px'
       },
       bmBurgerBars: {
@@ -62,14 +63,16 @@ class NavSlide extends React.Component {
         }
 
         render={data => (
-          <Menu right styles={ styles }>
-            {data.allNav.edges.map((row,i) => (
-              <NavSlideLink key={i}
-                name={row.node.name}
-                to={row.node.to}
-              />
-            ))}
-          </Menu>
+
+            <Menu right styles={ menuStyles }>
+              {data.allNav.edges.map((row,i) => (
+                <NavSlideLink key={i}
+                  name={row.node.name}
+                  to={row.node.to}
+                />
+              ))}
+            </Menu>
+
         )}
       />
     );

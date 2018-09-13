@@ -34,13 +34,18 @@ class NavBar extends React.Component {
         render={data => (
           <div className={styles.container}>
             <div className={navbarclass}>
-              <div className={styles.navdiv}>
-                {data.allNav.edges.map((row,i) => (
-                  <NavBarLink key={i}
-                    name={row.node.name}
-                    to={row.node.to}
-                  />
-                ))}
+              <div className={styles.container_inner}>
+                <div className={styles.titlediv}>
+                  Multimedia Lab
+                </div>
+                <div className={styles.navdiv}>
+                  {data.allNav.edges.map((row,i) => (
+                    <NavBarLink key={i}
+                      name={row.node.name}
+                      to={row.node.to}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

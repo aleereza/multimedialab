@@ -25,7 +25,9 @@
     "react-dom": "^16.5.0",
     "react-router-dom": "^4.3.1",
     "react-typography": "^0.16.13",
+    "reactstrap": "^6.4.0",
     "typography": "^0.16.17",
-    "typography-theme-fairy-gates": "^0.15.11"
+    "typography-theme-fairy-gates": "^0.15.11",
+    "typography-theme-noriega": "^0.15.10"
   }
 }

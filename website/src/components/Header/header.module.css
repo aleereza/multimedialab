@@ -1,23 +1,7 @@
-.container {
-  /* z-index: 500; */
-}
-
-.navbar_container{
-  display: none;
-}
-
-.navslide_container{
-
-}
-
-
-
-
-@media only screen and (min-width: 992px){
-    .navslide_container {
-      display: none;
-    }
-    .navbar_container{
-      display: block;
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navslide {
+    display: none;
+    background-color: red;
+  }
 }

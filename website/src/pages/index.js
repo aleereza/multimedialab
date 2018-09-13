@@ -43,7 +43,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allImages: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+    allImages: allFile(filter: { sourceInstanceName: { eq: "research_images" } }) {
       edges{
         node {
           childImageSharp {

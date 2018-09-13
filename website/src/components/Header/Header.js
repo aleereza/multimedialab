@@ -3,10 +3,7 @@ import React from "react"
 import styles from "./header.module.css"
 
 import NavBar from "./NavBar/NavBar"
-import NavBarLink from "./NavBarLink/NavBarLink"
 import NavSlide from "./NavSlide/NavSlide"
-import NavSlideLink from "./NavSlideLink/NavSlideLink"
-import Title from "./Title/Title"
 
 class Header extends React.Component {
   // constructor(props) {
@@ -16,13 +13,10 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Title/>
-        <NavBar>
-        link1
-        link2
-        link3
-        </NavBar>
-        <NavSlide/>
+        <div className={styles.navslide}>
+          <NavSlide/>
+        </div>
+        <NavBar/>
       </div>
     )
   }

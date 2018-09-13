@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from "./researchtile.module.css"
+import styles from "./studenttile.module.css"
 import Img from "gatsby-image"
 
-class ResearchTile extends React.Component {
+class StudentTile extends React.Component {
   render() {
     return (
       <div className={styles.container}>
@@ -10,16 +10,16 @@ class ResearchTile extends React.Component {
           <Img sizes={this.props.image} />
         </div>
         <div className={styles.text}>
-          {this.props.title}
+          {this.props.name}
         </div>
         <div className={styles.text}>
-          {this.props.short}
+          {this.props.title}
         </div>
       </div>
     );
   }
 }
 
-export default ResearchTile
+export default StudentTile
 
 // <Img fluid={props.image.fluid} backgroundColor={'#eeeeee'} />

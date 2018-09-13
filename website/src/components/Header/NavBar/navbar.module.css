@@ -1,6 +1,7 @@
 .container {
    transition: opacity 2s;
    width: 100%;
+
 }
 
 .navcontainer {
@@ -8,21 +9,42 @@
   z-index: 10;
 }
 
-.navdiv {
+.container_inner{
   max-width: 1280px;
+  height: 102px;
   margin: auto;
-  display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
   border-bottom: grey solid 1px;
   background-color: white;
   opacity: 0.95;
-
   box-shadow: 0 2px 3px -2px black;
+  display: block;
+}
+
+.navdiv {
+  flex: 1 1 0;
+  display: none;
+}
+.titlediv {
+  flex: 0 1 1;
 }
 
 /* The sticky class is added to the navbar when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navdiv {
+    /* flex: 1 1 0; */
+    display: flex;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container_inner{
+    display: flex;
+  }
 }
