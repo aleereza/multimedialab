@@ -7,13 +7,11 @@ class ResearchTile extends React.Component {
     return (
       <div className={styles.container}>
         <div className={styles.image}>
-          <Img sizes={this.props.image} />
+          <Img sizes={this.props.image}/>
         </div>
         <div className={styles.text}>
-          {this.props.title}
-        </div>
-        <div className={styles.text}>
-          {this.props.short}
+          <h2>{this.props.title}</h2>
+          <p>{this.props.short}</p>
         </div>
       </div>
     );

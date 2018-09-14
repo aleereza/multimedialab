@@ -15,15 +15,15 @@ class Footer extends React.Component {
           <div className={styles.row}>
             <div className={styles.col}>
               <FooterElement>
-                rababw at ece dot ubc dot ca
+                Multimedia Lab
               </FooterElement>
               <FooterElement>
-                (604) 266-4261
+                School fo Engneering Science
               </FooterElement>
             </div>
             <div className={styles.col}>
               <FooterElement>
-                University of British Columbia, The Fred Kaiser Building, 5500-2332 Main Mall, Vancouver, BC, Canada, V6T 1Z4
+                Simon Fraser University
               </FooterElement>
             </div>
         </div>

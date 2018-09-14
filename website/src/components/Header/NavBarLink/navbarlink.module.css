@@ -6,7 +6,7 @@
   border-top: #97D4E9 solid 3px; */
   border-bottom: white solid 3px;
   border-top: white solid 3px;
-
+  align-self: flex-end;
 }
 
 .container:hover{
@@ -26,11 +26,8 @@
   margin: 0;
   font-size: 1.1rem;
   line-height: 1;
-
-  display: table-cell;
-  vertical-align: middle;
-  /* vertical-align: bottom; */
   text-align: center;
+  text-decoration: none;
 }
 
 .innercontainer{
@@ -38,7 +35,7 @@
   height: 100%;
   width: 100%;
   display: table;
-  padding: .5rem;
+  padding: .2rem .5rem .2rem;
 }
 
 /* .link:hover{

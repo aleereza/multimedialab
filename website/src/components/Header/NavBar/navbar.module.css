@@ -20,14 +20,28 @@
   opacity: 0.95;
   box-shadow: 0 2px 3px -2px black;
   display: block;
+  position: relative;
 }
 
 .navdiv {
-  flex: 1 1 0;
   display: none;
+  flex: 1 1 0;
+
 }
 .titlediv {
   flex: 0 1 1;
+  /* position: relative; */
+  height: 52px;
+  align-self: center;
+}
+.titlediv h1{
+  margin: 0;
+  line-height: 1;
+  font-size: 1.75rem;
+}
+.titlediv p{
+  margin: 0;
+  line-height: 1;
 }
 
 /* The sticky class is added to the navbar when it reaches its scroll position */

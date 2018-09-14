@@ -1,0 +1,15 @@
+.container {
+  background-color: silver;
+  border-radius: .5rem;
+  margin: .5rem;
+  flex: 1 1 0;
+}
+.image{
+  border-radius: .5rem;
+}
+.text {
+  padding: 1rem;
+}
+.text h2{
+  margin: 0;
+}

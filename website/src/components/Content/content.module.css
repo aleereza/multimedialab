@@ -1,12 +1,12 @@
 .container {
-   padding-top: 0;
+   padding-top: 1rem;
    padding-bottom: 4.25rem;
    padding-left: 0;
    padding-right: 0;
    /* width: 80%; */
    max-width: 1280px;
    margin: auto;
-   background-color: #e0f2ff;
+   /* background-color: #e0f2ff; */
 }
 
 .addpadding {

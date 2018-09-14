@@ -36,7 +36,8 @@ class NavBar extends React.Component {
             <div className={navbarclass}>
               <div className={styles.container_inner}>
                 <div className={styles.titlediv}>
-                  Multimedia Lab
+                  <h1>Multimedia Lab</h1>
+                  <p>School of Engineering Science</p>
                 </div>
                 <div className={styles.navdiv}>
                   {data.allNav.edges.map((row,i) => (

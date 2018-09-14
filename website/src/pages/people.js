@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./pages.module.css"
-
+import { graphql } from "gatsby"
 import Layout from '../components/Layout/Layout'
 import StudentTile from "../components/Content/StudentTile/StudentTile"
 

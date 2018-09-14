@@ -2,6 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from '../components/Layout/Layout'
 import ResearchTile from "../components/Content/ResearchTile/ResearchTile"
+import ResearchSection from "../components/Content/ResearchSection/ResearchSection"
+import PublicationsSection from "../components/Content/PublicationsSection/PublicationsSection"
+import Publication from "../components/Content/Publication/Publication"
 
 class IndexPage extends React.Component {
   // constructor(props) {
@@ -11,21 +14,34 @@ class IndexPage extends React.Component {
   render() {
     const researchdata = this.props.data.allResearch.edges
     const researchimagesdata = this.props.data.allImages.edges
+    const publicationsdata = this.props.data.allPublications.edges
 
     return(
       <Layout>
         <div>
-          <h1>Areas of special interest and accomplishments</h1>
-          <p>My research has mainly focused on the field of Signal Processing, dealing with the analysis, interpretation, and manipulation of signals that represent observable quantities. An unexhaustive list of these signals include audio, video, speech, image, geophysical, sonar, radar, medical, musical and communication. My research involves solving real-life issues using  signal processing theories and techniques.
+          <p>The Lab specializes in the design and testing of new algorithms for the compression and transmission of digital image, video and audio signals. These exciting topics have been experiencing an explosion of activity over the past years, due to the development of the next-generation image coding standard JPEG2000 and video coding standard H.264, as well as multiview and 3D video.
           </p>
         </div>
-        {[0,1,2].map((i) => (
-          <ResearchTile
-            title={researchdata[i].node.title}
-            short={researchdata[i].node.short}
-            image={researchimagesdata[i].node.childImageSharp.sizes}
-          />
-        ))}
+        <ResearchSection>
+          {[0,1,2,3].map((i) => (
+            <ResearchTile
+              key={i}
+              title={researchdata[i].node.title}
+              short={researchdata[i].node.short}
+              image={researchimagesdata[i].node.childImageSharp.sizes}
+            />
+          ))}
+        </ResearchSection>
+        <PublicationsSection>
+          {[0,1,2,3,4,5].map((i) => (
+            <Publication
+              key={i}
+              authors={publicationsdata[i].node.authors}
+              title={publicationsdata[i].node.title}
+              journal={publicationsdata[i].node.journal}
+            />
+          ))}
+        </PublicationsSection>
       </Layout>
     )
   }
@@ -34,12 +50,21 @@ class IndexPage extends React.Component {
   export default IndexPage
 
 export const pageQuery = graphql`
-  query ResearchQuery {
+  query {
     allResearch: allResearchCsv {
       edges {
         node {
           title
           short
+        }
+      }
+    }
+    allPublications: allPublicationsCsv {
+      edges {
+        node {
+          authors
+          title
+          journal
         }
       }
     }
