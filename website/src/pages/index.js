@@ -5,6 +5,8 @@ import ResearchTile from "../components/Content/ResearchTile/ResearchTile"
 import ResearchSection from "../components/Content/ResearchSection/ResearchSection"
 import PublicationsSection from "../components/Content/PublicationsSection/PublicationsSection"
 import Publication from "../components/Content/Publication/Publication"
+import FacultyTile from "../components/Content/FacultyTile/FacultyTile"
+import FacultySection from "../components/Content/FacultySection/FacultySection"
 
 class IndexPage extends React.Component {
   // constructor(props) {
@@ -42,6 +44,20 @@ class IndexPage extends React.Component {
             />
           ))}
         </PublicationsSection>
+        <FacultySection>
+            <FacultyTile
+              name="ATOUSA HAJSHIRMOHAMMADI"
+              title="Senior Lecturer, School of Engineering Science P.Eng."
+            />
+            <FacultyTile
+              name="ATOUSA HAJSHIRMOHAMMADI"
+              title="Senior Lecturer, School of Engineering Science P.Eng."
+            />
+            <FacultyTile
+              name="ATOUSA HAJSHIRMOHAMMADI"
+              title="Senior Lecturer, School of Engineering Science P.Eng."
+            />
+        </FacultySection>
       </Layout>
     )
   }

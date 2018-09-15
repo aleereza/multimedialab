@@ -6,7 +6,9 @@ class PaperStack extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-        {this.props.children}
+        <div className={styles.paper}>
+          {this.props.children}
+        </div>
       </div>
     );
   }

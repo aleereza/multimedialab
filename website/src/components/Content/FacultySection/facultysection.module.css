@@ -1,15 +1,6 @@
-.container{
-  margin-top: 1rem;
-}
-.flexcont{
+.tilescontainer{
   display: flex;
   flex-flow: row wrap;
-}
-.text{
-  flex: 1 1 0;
-}
-.paperstack{
-  flex: 4 1 0;
 }
 .more{
   text-align: right;
