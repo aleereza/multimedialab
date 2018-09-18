@@ -10,7 +10,7 @@
 }
 
 .container:hover{
-  border-bottom: #002145 solid 3px;
+  border-bottom: #A6192E solid 3px;
   transition: .3s;
   /* font-weight: 500; */
   /* background-color: #40B4E5; */
@@ -18,12 +18,12 @@
 .container:hover .link{
   /* font-weight: 700; */
   transition: .3s;
-  color: black;
+  color: #A6192E;
 }
 
 .link {
-  color: #002145;
-  margin: 0;
+  color: #54585A;
+  margin: .25rem;
   font-size: 1.1rem;
   line-height: 1;
   text-align: center;

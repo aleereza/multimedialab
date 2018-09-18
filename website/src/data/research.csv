@@ -1,9 +1,6 @@
-id,title,short,long
-1,title 1 ,this is a sample short introduction for research 1,this is a sample long introduction for research 1
-2,title 2,this is a sample short introduction for research 2,this is a sample long introduction for research 2
-3,title 3,this is a sample short introduction for research 3,this is a sample long introduction for research 3
-4,title 4,this is a sample short introduction for research 4,this is a sample long introduction for research 4
-5,title 5,this is a sample short introduction for research 5,this is a sample long introduction for research 5
-6,title 6,this is a sample short introduction for research 6,this is a sample long introduction for research 6
-7,title 7,this is a sample short introduction for research 7,this is a sample long introduction for research 7
-8,title 8,this is a sample short introduction for research 8,this is a sample long introduction for research 8
+index,title,short,long
+1,aaa,bbb,ccc
+2,aaa,bbb,ccc
+3,aaa,bbb,ccc
+4,aaa,bbb,ccc
+5,aaa,bbb,ccc

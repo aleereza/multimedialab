@@ -8,6 +8,8 @@ import Publication from "../components/Content/Publication/Publication"
 import FacultyTile from "../components/Content/FacultyTile/FacultyTile"
 import FacultySection from "../components/Content/FacultySection/FacultySection"
 
+import styles from "./pages.module.css"
+
 class IndexPage extends React.Component {
   // constructor(props) {
   //   super(props)
@@ -20,10 +22,11 @@ class IndexPage extends React.Component {
 
     return(
       <Layout>
-        <div>
+        <div className={styles.introsection}>
           <p>The Lab specializes in the design and testing of new algorithms for the compression and transmission of digital image, video and audio signals. These exciting topics have been experiencing an explosion of activity over the past years, due to the development of the next-generation image coding standard JPEG2000 and video coding standard H.264, as well as multiview and 3D video.
           </p>
         </div>
+
         <ResearchSection>
           {[0,1,2,3].map((i) => (
             <ResearchTile
@@ -34,6 +37,7 @@ class IndexPage extends React.Component {
             />
           ))}
         </ResearchSection>
+
         <PublicationsSection>
           {[0,1,2,3,4,5].map((i) => (
             <Publication
@@ -44,6 +48,7 @@ class IndexPage extends React.Component {
             />
           ))}
         </PublicationsSection>
+
         <FacultySection>
             <FacultyTile
               name="ATOUSA HAJSHIRMOHAMMADI"
@@ -67,14 +72,7 @@ class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query {
-    allResearch: allResearchCsv {
-      edges {
-        node {
-          title
-          short
-        }
-      }
-    }
+
     allPublications: allPublicationsCsv {
       edges {
         node {
@@ -84,6 +82,16 @@ export const pageQuery = graphql`
         }
       }
     }
+
+    allResearch: allResearchCsv {
+      edges {
+        node {
+          title
+          short
+        }
+      }
+    }
+
     allImages: allFile(filter: { sourceInstanceName: { eq: "research_images" } }) {
       edges{
         node {
@@ -97,5 +105,7 @@ export const pageQuery = graphql`
         }
       }
     }
+
+
   }
-`
+`;

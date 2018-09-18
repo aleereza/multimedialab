@@ -7,6 +7,7 @@
 .navcontainer {
   width: 100%;
   z-index: 10;
+
 }
 
 .container_inner{
@@ -29,10 +30,10 @@
 
 }
 .titlediv {
-  flex: 0 1 1;
-  /* position: relative; */
+  color: #007096;
+  position: absolute;
+  top: 25px;
   height: 52px;
-  align-self: center;
 }
 .titlediv h1{
   margin: 0;
@@ -55,10 +56,25 @@
     /* flex: 1 1 0; */
     display: flex;
   }
+  .titlediv {
+    position: static;
+    margin-top: 1rem;
+  }
+  .container_inner{
+    height: auto;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .container_inner{
     display: flex;
+  }
+  .titlediv {
+    flex: 0 1 1;
+    height: 55px;
+    align-self: flex-end;
+    margin-bottom: .25rem;
+    margin-right: 1rem;
+    min-width: 235px;
   }
 }

@@ -1,6 +1,6 @@
 .tilescontainer{
   display: flex;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
 }
 .more{
   text-align: right;

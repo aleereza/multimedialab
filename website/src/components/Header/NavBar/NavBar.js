@@ -18,7 +18,7 @@ class NavBar extends React.Component {
       <StaticQuery
         query={
           graphql`
-            query {
+            query NavBar {
               allNav: allNavCsv {
                 edges {
                   node {

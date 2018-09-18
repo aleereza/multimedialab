@@ -20,8 +20,14 @@ class NavSlide extends React.Component {
         background: '#373a47'
       },
       bmCrossButton: {
-        height: '24px',
-        width: '24px'
+        position: 'fixed',
+        width: '36px',
+        height: '30px',
+        right: '36px',
+        top: '36px',
+        textAlign: "center"
+        // height: '24px',
+        // width: '24px'
       },
       bmCross: {
         background: '#bdc3c7'

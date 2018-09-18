@@ -14,8 +14,8 @@
 } */
 
 .link {
-  color: #97D4E9;
-  margin: 0;
+  color: white;
+  margin: .5rem;
   font-size: 1.3rem;
   overflow-x: hidden;
   /* background-color: #002145; */

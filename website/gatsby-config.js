@@ -5,7 +5,6 @@ module.exports = {
     title: 'Multimedia Lab',
   },
   plugins: [
-    // `gatsby-plugin-typography`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -19,6 +18,8 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
+
+    `gatsby-transformer-csv`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,8 +34,7 @@ module.exports = {
         path: `${__dirname}/src/images/students/`,
       },
     },
-    `gatsby-transformer-csv`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`
-  ],
+  ]
 };
