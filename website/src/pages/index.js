@@ -19,6 +19,7 @@ class IndexPage extends React.Component {
     const researchdata = this.props.data.allResearch.edges
     const researchimagesdata = this.props.data.allImages.edges
     const publicationsdata = this.props.data.allPublications.edges
+    const facultydata = this.props.data.allFaculty.edges
 
     return(
       <Layout>
@@ -51,16 +52,19 @@ class IndexPage extends React.Component {
 
         <FacultySection>
             <FacultyTile
-              name="ATOUSA HAJSHIRMOHAMMADI"
-              title="Senior Lecturer, School of Engineering Science P.Eng."
+              name={facultydata[0].node.name}
+              title={facultydata[0].node.title}
+              image={this.props.data.IvanImg.childImageSharp.sizes}
             />
             <FacultyTile
-              name="ATOUSA HAJSHIRMOHAMMADI"
-              title="Senior Lecturer, School of Engineering Science P.Eng."
+              name={facultydata[1].node.name}
+              title={facultydata[1].node.title}
+              image={this.props.data.JieImg.childImageSharp.sizes}
             />
             <FacultyTile
-              name="ATOUSA HAJSHIRMOHAMMADI"
-              title="Senior Lecturer, School of Engineering Science P.Eng."
+              name={facultydata[2].node.name}
+              title={facultydata[2].node.title}
+              image={this.props.data.AtousaImg.childImageSharp.sizes}
             />
         </FacultySection>
       </Layout>
@@ -92,6 +96,17 @@ export const pageQuery = graphql`
       }
     }
 
+    allFaculty: allFacultyCsv {
+      edges {
+        node {
+          name
+          title
+          email
+          website
+        }
+      }
+    }
+
     allImages: allFile(filter: { sourceInstanceName: { eq: "research_images" } }) {
       edges{
         node {
@@ -106,6 +121,33 @@ export const pageQuery = graphql`
       }
     }
 
+    IvanImg: file(sourceInstanceName: { eq: "faculty_images" }, relativePath: { eq: "ivanbajic.jpg" }) {
+    childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        sizes(maxWidth: 600) {
+          ...GatsbyImageSharpSizes_tracedSVG
+        }
+      }
+    }
+    AtousaImg: file(sourceInstanceName: { eq: "faculty_images" }, relativePath: { eq: "atousahajshirmohammadi.jpg" }) {
+    childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        sizes(maxWidth: 600) {
+          ...GatsbyImageSharpSizes_tracedSVG
+        }
+      }
+    }
+    JieImg: file(sourceInstanceName: { eq: "faculty_images" }, relativePath: { eq: "jieliang.jpg" }) {
+    childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        sizes(maxWidth: 600) {
+          ...GatsbyImageSharpSizes_tracedSVG
+        }
+      }
+    }
 
   }
 `;

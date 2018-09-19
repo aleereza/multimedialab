@@ -1,11 +1,12 @@
 .container {
-   padding-top: 1rem;
+   /* padding-top: 1rem; */
+   padding-top: 6rem;
    padding-bottom: 4.25rem;
    padding-left: .5rem;
    padding-right: .5rem;
-   /* width: 80%; */
    max-width: 1280px;
    margin: auto;
+   
    /* background-color: #e0f2ff; */
 }
 
@@ -20,9 +21,9 @@
 
 
 /* 100% Width on Smaller Screens */
-@media only screen and (max-width: 992px){
+/* @media only screen and (max-width: 992px){
     .container {
         width: 100%;
         padding-bottom: 0;
     }
-}
+} */

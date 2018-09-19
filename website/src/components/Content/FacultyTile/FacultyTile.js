@@ -7,7 +7,7 @@ class FacultyTile extends React.Component {
     return (
       <div className={styles.container}>
         <div className={styles.image}>
-
+          <Img sizes={this.props.image}/>
         </div>
         <div className={styles.text}>
           <h2>{this.props.name}</h2>

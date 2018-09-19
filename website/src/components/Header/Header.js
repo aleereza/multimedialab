@@ -16,7 +16,9 @@ class Header extends React.Component {
         <div className={styles.navslide}>
           <NavSlide/>
         </div>
-        <NavBar/>
+        <div className={styles.navbar}>
+          <NavBar/>
+        </div>
       </div>
     )
   }

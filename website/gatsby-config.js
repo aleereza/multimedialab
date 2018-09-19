@@ -18,7 +18,6 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
-
     `gatsby-transformer-csv`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,6 +31,13 @@ module.exports = {
       options: {
         name: `students_images`,
         path: `${__dirname}/src/images/students/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `faculty_images`,
+        path: `${__dirname}/src/images/faculty/`,
       },
     },
     `gatsby-transformer-sharp`,

@@ -1,11 +1,13 @@
 .container {
   background-color: silver;
-  border-radius: .5rem;
+  border-radius: .3rem;
+  overflow: hidden;
   margin: .5rem;
   flex: 1 1 100%;
 }
 .image{
-  border-radius: .5rem;
+  /* border-radius: .5rem; */
+  /* border: 1px solid blue; */
 }
 .text {
   padding: 1rem;
