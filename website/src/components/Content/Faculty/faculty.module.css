@@ -2,20 +2,26 @@
   background-color: silver;
   border-radius: .3rem;
   overflow: hidden;
-  margin: .5rem;
-  flex: 1 1 100%;
+  /* margin: .5rem;
+  flex: 1 1 100%; */
+  /* display: flex; */
 }
-.image{
-  border-radius: .5rem;
+.info_container{
+  display: flex;
 }
-.text {
+.bio_container{
   padding: .5rem;
 }
-.text h2{
-  margin: 0;
+.image{
+  flex: 1 1 0;
+
 }
-.text h4{
-  margin: 0 0 .5rem 0;
+.info_text {
+  padding: .5rem;
+  flex: 2 1 0;
+}
+.info_text h2{
+  margin: 0;
 }
 .title{
   font-size: .8rem;
@@ -23,20 +29,18 @@
   line-height: 1.1rem;
   margin-bottom: .5rem;
 }
-.text ul{
-  list-style-position: inside;
-  margin-left: 0rem;
-  margin-bottom: .5rem;
-}
-.text li{
-  font-size: .8rem;
-  line-height: .9rem;
-  margin-bottom: .5rem;
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .container{
+  .container {
+    display: flex;
+  }
+  .info_container{
+    display: block;
+    flex: 0 1 1;
+    max-width: 200px;
+  }
+  .bio_container{
     flex: 1 1 0;
   }
 }

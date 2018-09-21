@@ -1,21 +1,16 @@
-index,name,title,email,webpage
-1,student 1,title 1,email1@gmail.com,www.website1.com
-2,student 2,title 2,email2@gmail.com,www.website2.com
-3,student 3,title 3,email3@gmail.com,www.website3.com
-4,student 4,title 4,email4@gmail.com,www.website4.com
-5,student 5,title 5,email5@gmail.com,www.website1.com
-6,student 6,title 6,email6@gmail.com,www.website2.com
-7,student 7,title 7,email7@gmail.com,www.website3.com
-8,student 8,title 8,email8@gmail.com,www.website4.com
-9,student 9,title 9,email9@gmail.com,www.website1.com
-10,student 10,title 10,email1@gmail.com,www.website2.com
-11,student 11,title 11,email2@gmail.com,www.website3.com
-12,student 12,title 12,email3@gmail.com,www.website4.com
-13,student 13,title 13,email4@gmail.com,www.website1.com
-14,student 14,title 14,email5@gmail.com,www.website2.com
-15,student 15,title 15,email6@gmail.com,www.website3.com
-16,student 16,title 16,email7@gmail.com,www.website4.com
-17,student 17,title 17,email8@gmail.com,www.website1.com
-18,student 18,title 18,email9@gmail.com,www.website2.com
-19,student 19,title 19,email1@gmail.com,www.website3.com
-20,student 20,title 20,email2@gmail.com,www.website4.com
+index,name,title,email,website
+1,"Yue-Meng Chen","Phd Student",email1@gmail.com,http://www.website1.com
+2,"Yu Gao","Phd Student",email2@gmail.com,http://www.website2.com
+3,"Hadi Hadizadeh","Phd Student",email3@gmail.com,http://www.website3.com
+4,"Hanieh Khalilian","Phd Student",email4@gmail.com,http://www.website4.com
+5,"Sayed Hossein Khatoonabadi","Phd Student",email5@gmail.com,http://www.website1.com
+6,"Choong-Hoon Kwak","Phd Student",email6@gmail.com,http://www.website2.com
+7",Carl Qian","Phd Student",email7@gmail.com,http://www.website3.com
+8,"Mehdi Seyfi","Phd Student",email8@gmail.com,http://www.website4.com
+9,"Xiaoyu Xiu","Phd Student",email9@gmail.com,http://www.website1.com
+10,"Dong Zhang","Phd Student",email1@gmail.com,http://www.website2.com
+11,"Andrew Au","MASc Student",email2@gmail.com,http://www.website3.com
+12,Parmida Beigi,"MASc Student",email3@gmail.com,http://www.website4.com
+13,Duncan Chan,"MASc Student",email4@gmail.com,http://www.website1.com
+14,Xiaozheng Huang,"MASc Student",email5@gmail.com,http://www.website2.com
+15,Xiao Luo,"MASc Student",email6@gmail.com,http://www.website3.com

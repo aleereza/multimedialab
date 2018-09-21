@@ -1,0 +1,36 @@
+.container {
+  /* background-color: silver; */
+  border-radius: .3rem;
+  overflow: hidden;
+  border: white 1px solid;
+
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+.container:hover{
+  border: #007096 1px solid;
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+.image {
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+.image img{
+
+}
+.text {
+  padding: .5rem;
+  text-align: center;
+}
+.text h3{
+  margin: 0;
+}
+.title{
+  font-size: .8rem;
+  color: dimgray;
+  line-height: 1.1rem;
+  margin-bottom: .5rem;
+}

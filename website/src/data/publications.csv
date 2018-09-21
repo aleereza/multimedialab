@@ -1,7 +1,7 @@
 index,authors,title,journal
-1,aaa,bbb,ccc
-2,aaa,bbb,ccc
-3,aaa,bbb,ccc
+1,"C.-H. Kwak and I. V. Bajić","Online MoCap data coding with bit allocation, rate control, and motion-adaptive post-processing","IEEE Trans. Multimedia, vol. 19, no. 6, pp. 1127-1141, Jun. 2017."
+2,"H. Khalilian, I. V. Bajić, and R. G. Vaughan","A simulation study of a 3D sound field reproduction system for immersive communication","IEEE/ACM Trans. Audio, Speech, and Language Processing, vol. 25, no. 5, pp. 980-995, May 2017."
+3,"V. A. Mateescu and I. V. Bajić","Visual attention retargeting","IEEE MultiMedia, vol. 23, no. 1, pp. 82-91, Jan.-Mar. 2016."
 4,aaa,bbb,ccc
 5,aaa,bbb,ccc
 6,aaa,bbb,ccc

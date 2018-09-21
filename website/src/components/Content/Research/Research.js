@@ -1,8 +1,9 @@
 import React from 'react'
-import styles from "./facultytile.module.css"
+import styles from "./research.module.css"
 import Img from "gatsby-image"
 
-class FacultyTile extends React.Component {
+//component for research page
+class Research extends React.Component {
   render() {
     return (
       <div className={styles.container}>
@@ -24,6 +25,6 @@ class FacultyTile extends React.Component {
   }
 }
 
-export default FacultyTile
+export default Research
 
 // <Img fluid={props.image.fluid} backgroundColor={'#eeeeee'} />

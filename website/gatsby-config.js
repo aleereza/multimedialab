@@ -22,8 +22,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `research_images`,
-        path: `${__dirname}/src/images/research/`,
+        name: `research_small`,
+        path: `${__dirname}/src/images/research_small/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `research_large`,
+        path: `${__dirname}/src/images/research_large/`,
       },
     },
     {

@@ -1,8 +1,8 @@
 .container {
   background-color: silver;
-  border-radius: .3rem;
+  /* border-radius: .3rem; */
   overflow: hidden;
-  margin: .5rem;
+  /* margin: .5rem; */
   flex: 1 1 100%;
 }
 .image{
@@ -11,7 +11,7 @@
 .text {
   padding: .5rem;
 }
-.text h2{
+.text h2, .text h4{
   margin: 0;
 }
 .text h4{
