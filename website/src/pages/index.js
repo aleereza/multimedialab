@@ -32,6 +32,7 @@ class IndexPage extends React.Component {
           {[0,1,2,3].map((i) => (
             <ResearchTile
               key={i}
+              index={researchdata[i].node.index}
               title={researchdata[i].node.title}
               short={researchdata[i].node.short}
               image={researchimagesdata[i].node.childImageSharp.sizes}
@@ -99,6 +100,7 @@ export const pageQuery = graphql`
     allResearch: allResearchCsv {
       edges {
         node {
+          index
           title
           short
         }

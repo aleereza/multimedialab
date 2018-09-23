@@ -14,14 +14,17 @@ class ResearchPage extends React.Component {
 
     return(
       <Layout>
-        <h1>Research</h1>
         <p>A paragraph about research in Multimedia Lab</p>
         <div>
-        <Research
-          title={researchdata[0].node.title}
-          long={researchdata[0].node.long}
-          image={researchimagesdata[0].node.childImageSharp.sizes}
-        />
+        {researchdata.map((row,i) => (
+          <div id={researchdata[i].node.index} className={styles.research_container}>
+            <Research key={i}
+            title={researchdata[i].node.title}
+            long={researchdata[i].node.long}
+            image={researchimagesdata[i].node.childImageSharp.sizes}
+            />
+          </div>
+        ))}
         </div>
       </Layout>
     )
@@ -46,8 +49,9 @@ export const pageQuery = graphql`
     allResearch: allResearchCsv {
       edges {
         node {
+          index
           title
-          short
+          long
         }
       }
     }

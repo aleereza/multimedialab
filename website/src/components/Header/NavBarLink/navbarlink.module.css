@@ -4,8 +4,8 @@
   flex: 1 1 0;
   /* border-bottom: #97D4E9 solid 3px;
   border-top: #97D4E9 solid 3px; */
-  border-bottom: white solid 3px;
-  border-top: white solid 3px;
+  border-bottom: #F8F8F8 solid 3px;
+  border-top: #F8F8F8 solid 3px;
   align-self: flex-end;
 }
 

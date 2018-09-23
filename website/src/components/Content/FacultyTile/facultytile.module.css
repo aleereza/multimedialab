@@ -1,12 +1,15 @@
 .container {
-  background-color: silver;
-  border-radius: .3rem;
+  /* background-color: silver; */
+  border-radius: .3rem 0 0 .3rem;
+  border-left: 1px solid #777;
+  border-bottom: 1px solid #777;
   overflow: hidden;
   margin: .5rem;
   flex: 1 1 100%;
 }
 .image{
-  border-radius: .5rem;
+  /* border-radius: .5rem; */
+  max-width: 300px;
 }
 .text {
   padding: .5rem;

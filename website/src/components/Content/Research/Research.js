@@ -11,14 +11,8 @@ class Research extends React.Component {
           <Img sizes={this.props.image}/>
         </div>
         <div className={styles.text}>
-          <h2>{this.props.name}</h2>
-          <p className={styles.title}>{this.props.title}</p>
-          <h4>Research Interests:</h4>
-          <ul>
-            <li>{this.props.research1}</li>
-            <li>{this.props.research2}</li>
-            <li>{this.props.research3}</li>
-          </ul>
+          <h2>{this.props.title}</h2>
+          <p>{this.props.long}</p>
         </div>
       </div>
     );

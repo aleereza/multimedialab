@@ -1,6 +1,6 @@
 .container {
   /* background-color: silver; */
-  border-radius: .3rem;
+  /* border-radius: .3rem; */
   overflow: hidden;
   border: white 1px solid;
 
@@ -8,12 +8,12 @@
   -webkit-filter: grayscale(1);
 }
 .container:hover{
-  border: #007096 1px solid;
+  border: #A6192E 1px solid;
   filter: none;
   -webkit-filter: grayscale(0);
 }
 .image {
-
+  /* background-color: #777; */
   padding-left: 2rem;
   padding-right: 2rem;
 
@@ -33,4 +33,16 @@
   color: dimgray;
   line-height: 1.1rem;
   margin-bottom: .5rem;
+}
+.icon {
+  vertical-align: middle;
+  margin: .25rem;
+  /* height: 3rem; */
+}
+/* .iconstyle {
+  height: 2rem;
+  color: red;
+} */
+.displaynone{
+  display: none;
 }

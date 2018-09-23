@@ -4,9 +4,9 @@ import { graphql } from "gatsby"
 import Layout from '../components/Layout/Layout'
 import StudentTile from "../components/Content/StudentTile/StudentTile"
 import Faculty from "../components/Content/Faculty/Faculty"
+import Heading from "../components/Content/Heading/Heading"
 
 class PeoplePage extends React.Component {
-
 
   render() {
     const studentsdata = this.props.data.allStudents.edges
@@ -14,7 +14,7 @@ class PeoplePage extends React.Component {
     const facultydata = this.props.data.allFaculty.edges
     return(
       <Layout>
-        <h1>Faculty</h1>
+        <Heading text="Faculty"/>
         <Faculty
           name={facultydata[0].node.name}
           title={facultydata[0].node.title}
@@ -43,7 +43,7 @@ class PeoplePage extends React.Component {
           bio={facultydata[2].node.bio}
         />
 
-        <h1>Students</h1>
+        <Heading text="Students"/>
         <div className={styles.studentstile_container}>
 
           {[0,1,2,3,4,5,6,7,8,9,10].map((i) => (
@@ -55,12 +55,16 @@ class PeoplePage extends React.Component {
                 image={studentsimagesdata[i].node.childImageSharp.sizes}
                 website={studentsdata[i].node.website}
                 email={studentsdata[i].node.email}
+                github={studentsdata[i].node.github}
+                linkedin={studentsdata[i].node.linkedin}
               />
 
             </div>
           ))}
 
         </div>
+
+        <Heading text="Alumni"/>
       </Layout>
     )
   }
@@ -78,6 +82,8 @@ export const studentsQuery = graphql`
           title
           email
           website
+          github
+          linkedin
         }
       }
     }

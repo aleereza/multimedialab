@@ -4,13 +4,11 @@
    position: fixed;
    top: 0;
    z-index: 10;
-
 }
 
 .navcontainer {
   width: 100%;
   z-index: 10;
-
 }
 
 .container_inner{
@@ -20,7 +18,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   border-bottom: grey solid 1px;
-  background-color: white;
+  /* background-color: white; */
+  background-color: #F8F8F8;
   opacity: 0.95;
   box-shadow: 0 2px 3px -2px black;
   display: block;
@@ -61,7 +60,7 @@
   }
   .titlediv {
     position: static;
-    margin-top: 1rem;
+    padding-top: 1rem;
   }
   .container_inner{
     height: auto;
@@ -78,6 +77,8 @@
     align-self: flex-end;
     margin-bottom: .25rem;
     margin-right: 1rem;
+    margin-top: 1rem;
     min-width: 235px;
+    padding-top: 0;
   }
 }
