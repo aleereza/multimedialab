@@ -2,8 +2,8 @@ import React from 'react'
 import styles from "./studenttile.module.css"
 import Img from "gatsby-image"
 import cx from "classnames"
-import email_icon from "../../../images/icons/email.png"
-import website_icon from "../../../images/icons/link.png"
+// import email_icon from "../../../images/icons/email.png"
+// import website_icon from "../../../images/icons/link.png"
 
 // all icons: https://react-icons.netlify.com/#/icons/fa
 import { FaEnvelopeSquare } from 'react-icons/fa';
