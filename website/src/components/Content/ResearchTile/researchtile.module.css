@@ -25,6 +25,7 @@
 }
 .more_container{
   text-align: right;
+  /* height: 1rem; */
 }
 .more{
   color: black;
@@ -33,6 +34,8 @@
 }
 .icon{
   vertical-align:middle;
+  height: .7rem;
+  /* svg width and height don't work in firefox */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -37,7 +37,8 @@
 .icon {
   vertical-align: middle;
   margin: .25rem;
-  /* height: 3rem; */
+  height: 1.5rem;
+  /* svg width and height don't work in firefox */
 }
 /* .iconstyle {
   height: 2rem;

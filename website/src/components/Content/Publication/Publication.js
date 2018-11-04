@@ -9,7 +9,12 @@ class Publication extends React.Component {
         <span>, </span>
         <span className={styles.title}>{this.props.title}</span>
         <span>, </span>
-        <span className={styles.journal}>{this.props.journal}</span>
+        <span className={styles.ref}>{this.props.ref}</span>
+        <span>, </span>
+        <span className={styles.month}>{this.props.month}</span>
+        <span> </span>
+        <span className={styles.year}>{this.props.year}</span>
+        <span>.</span>
       </div>
     )
   }

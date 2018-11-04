@@ -19,7 +19,7 @@ class ResearchTile extends React.Component {
           <div className={styles.more_container}>
             <IconContext.Provider value={{className: styles.icon, size: ".7rem", color: "black"}}>
               <div>
-                <Link to={"/research#"+this.props.index}><small className={styles.more}>more</small><FaChevronRight/></Link>
+                <Link to={"/research#"+this.props.index}><small className={styles.more}>more </small><FaChevronRight/></Link>
               </div>
             </IconContext.Provider>
           </div>

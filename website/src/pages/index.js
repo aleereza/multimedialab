@@ -24,7 +24,7 @@ class IndexPage extends React.Component {
     return(
       <Layout>
         <div className={styles.introsection}>
-          <p>The Lab specializes in the design and testing of new algorithms for the compression and transmission of digital image, video and audio signals. These exciting topics have been experiencing an explosion of activity over the past years, due to the development of the next-generation image coding standard JPEG2000 and video coding standard H.264, as well as multiview and 3D video.
+          <p>SFU Multimedia Lab was founded in the early 1990’s by the late Dr. Jacques Vaisey, as the Image Communications Laboratory. In 2004 and 2005, Drs. Jie Liang, Atousa Hajshirmohammadi, and Ivan Bajić joined SFU, and the lab was renamed to Multimedia Communications Laboratory. In recent years, the lab’s name has evolved to the Multimedia Lab, to reflect the breadth of the research being undertaken. Our work encompases multimedia signal processing, compression, communications, multimedia ergonomics, analytics, and AI.
           </p>
         </div>
 
@@ -46,7 +46,9 @@ class IndexPage extends React.Component {
               key={i}
               authors={publicationsdata[i].node.authors}
               title={publicationsdata[i].node.title}
-              journal={publicationsdata[i].node.journal}
+              ref={publicationsdata[i].node.ref}
+              month={publicationsdata[i].node.month}
+              year={publicationsdata[i].node.year}
             />
           ))}
         </PublicationsSection>
@@ -92,7 +94,9 @@ export const pageQuery = graphql`
         node {
           authors
           title
-          journal
+          ref
+          month
+          year
         }
       }
     }

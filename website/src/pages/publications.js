@@ -83,7 +83,10 @@ class PublicationsPage extends React.Component {
 
 export default PublicationsPage
 
-
+// in data>publications:
+//type: type of poblication: j (journal), c (conference), b (book)
+//research: index number of the reaserch wich the publication related to
+//code: link to the code =
 export const publicationsQuery = graphql
 `
 query publicationsQuery {
@@ -93,7 +96,6 @@ query publicationsQuery {
         index
         authors
         title
-        journal
       }
     }
   }

@@ -41,7 +41,6 @@ export const pageQuery = graphql`
         node {
           authors
           title
-          journal
         }
       }
     }
