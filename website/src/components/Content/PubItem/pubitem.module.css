@@ -1,0 +1,68 @@
+.container{
+  /* border-left: 5px solid; */
+  border-style: solid;
+  border-width: 1px 1px 1px 5px;;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+  position: relative;
+  min-height: 3.2rem;
+}
+
+.journalclass {
+  border-color: red;
+}
+.journalclass:hover{
+  background-color: red;
+}
+
+.conferenceclass{
+  border-color: blue;
+}
+.conferenceclass:hover{
+  background-color: blue;
+}
+
+.bookclass{
+  border-color: green;
+}
+.bookclass:hover{
+  background-color: green;
+}
+
+.authors{
+  font-weight: 700;
+}
+
+/* .reference{
+  font-weight: 700;
+} */
+
+.icon {
+  /* position:absolute; */
+  /* right: 0; */
+  vertical-align: middle;
+  margin: .1rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  /* svg width and height don't work in firefox */
+}
+
+.displaynone{
+  display: none;
+}
+
+.textcontainer{
+  margin-right: 2rem;
+}
+
+.iconcontainer{
+  position: absolute;
+  right: .1rem;
+  top: 0;
+  /* bottom: 0; */
+}
+/* div{
+  margin: 0;
+} */

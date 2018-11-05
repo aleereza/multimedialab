@@ -1,8 +1,9 @@
 import React from 'react'
-import styles from "./pages.module.css"
+// import styles from "./pages.module.css"
 import Layout from '../components/Layout/Layout'
+import PubItem from '../components/Content/PubItem/PubItem'
 import { graphql } from "gatsby"
-import {Index} from "elasticlunr"
+// import {Index} from "elasticlunr"
 import elasticlunr from "elasticlunr"
 
 class PublicationsPage extends React.Component {
@@ -41,7 +42,7 @@ class PublicationsPage extends React.Component {
                 title: {boost: 2},
                 authors: {boost: 1}
             },
-            bool: "OR",
+            bool: "AND",
             expand: true
           }
           this.index = this.getOrCreateIndex();
@@ -57,27 +58,52 @@ class PublicationsPage extends React.Component {
   }
 
   render() {
+    const publicationsdata = this.props.data.allPublications.edges
 
-    return(
-      <Layout>
-        <h1>Publications</h1>
-        <div>
+    if(this.state.query===''){
+      return(
+        <Layout>
+          <h1>Publications</h1>
 
-        </div>
-
-        <div>
-          <input type="text" value={this.state.query} onChange={this.search}/>
-          <ul>
-            {this.state.results.map(p => (
-              <li>
-                {p.title}
-              </li>
+          <div>
+            <input type="text" value={this.state.query} onChange={this.search}/>
+            {publicationsdata.map((row,i) => (
+                <PubItem key={i}
+                title={publicationsdata[i].node.title}
+                authors={publicationsdata[i].node.authors}
+                reference={publicationsdata[i].node.reference}
+                month={publicationsdata[i].node.month}
+                year={publicationsdata[i].node.year}
+                type={publicationsdata[i].node.type}
+                link={publicationsdata[i].node.link}
+                code={publicationsdata[i].node.code}
+                />
             ))}
-          </ul>
-        </div>
+          </div>
 
-      </Layout>
-    )
+        </Layout>
+      )
+    }
+    else{
+      return(
+        <Layout>
+          <h1>Publications</h1>
+
+          <div>
+            <input type="text" value={this.state.query} onChange={this.search}/>
+            <ul>
+              {this.state.results.map(p => (
+                <li>
+                  {p.title}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </Layout>
+      )
+    }
+
   }
 }
 
@@ -87,8 +113,7 @@ export default PublicationsPage
 //type: type of poblication: j (journal), c (conference), b (book)
 //research: index number of the reaserch wich the publication related to
 //code: link to the code =
-export const publicationsQuery = graphql
-`
+export const publicationsQuery = graphql`
 query publicationsQuery {
   allPublications: allPublicationsCsv {
     edges {
@@ -96,6 +121,12 @@ query publicationsQuery {
         index
         authors
         title
+        reference
+        month
+        year
+        type
+        link
+        code
       }
     }
   }

@@ -1,4 +1,4 @@
-index,authors,title,ref,month,year,type,research,code,link
+index,authors,title,reference,month,year,type,research,code,link
 1,C.-H. Kwak and I. V. Bajić,"Online MoCap data coding with bit allocation, rate control, and motion-adaptive post-processing","IEEE Trans. Multimedia, vol. 19, no. 6, pp. 1127-1141.",Jun,2017,j,,,
 2,"H. Khalilian, I. V. Bajić, and R. G. Vaughan",A simulation study of a 3D sound field reproduction system for immersive communication,"IEEE/ACM Trans. Audio, Speech, and Language Processing, vol. 25, no. 5, pp. 980-995.",May,2017,j,1,https://www.researchgate.net/publication/313822275_Immersive-SFR-code,https://www.researchgate.net/publication/313709430_A_Simulation_Study_of_a_3D_Sound_Field_Reproduction_System_for_Immersive_Communication
 3,V. A. Mateescu and I. V. Bajić,Visual attention retargeting,"IEEE MultiMedia, vol. 23, no. 1, pp. 82-91.",Mar,2016,j,,,

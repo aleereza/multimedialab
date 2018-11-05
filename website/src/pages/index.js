@@ -46,7 +46,7 @@ class IndexPage extends React.Component {
               key={i}
               authors={publicationsdata[i].node.authors}
               title={publicationsdata[i].node.title}
-              ref={publicationsdata[i].node.ref}
+              reference={publicationsdata[i].node.reference}
               month={publicationsdata[i].node.month}
               year={publicationsdata[i].node.year}
             />
@@ -94,7 +94,7 @@ export const pageQuery = graphql`
         node {
           authors
           title
-          ref
+          reference
           month
           year
         }
