@@ -1,3 +1,10 @@
+/*
+for publications:
+red: #990000 #ffb3b3
+blue: #007399 #ccf2ff
+green: #1f7a1f #d6f5d6
+*/
+
 .container{
   /* border-left: 5px solid; */
   border-style: solid;
@@ -11,24 +18,24 @@
 }
 
 .journalclass {
-  border-color: red;
+  border-color: #990000;
 }
 .journalclass:hover{
-  background-color: red;
+  background-color: #ffb3b3;
 }
 
 .conferenceclass{
-  border-color: blue;
+  border-color: #007399;
 }
 .conferenceclass:hover{
-  background-color: blue;
+  background-color: #ccf2ff;
 }
 
 .bookclass{
-  border-color: green;
+  border-color: #1f7a1f;
 }
 .bookclass:hover{
-  background-color: green;
+  background-color: #d6f5d6;
 }
 
 .authors{

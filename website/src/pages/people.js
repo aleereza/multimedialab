@@ -18,6 +18,8 @@ class PeoplePage extends React.Component {
         <Faculty
           name={facultydata[0].node.name}
           title={facultydata[0].node.title}
+          email={facultydata[0].node.email}
+          website={facultydata[0].node.website}
           image={this.props.data.IvanImg.childImageSharp.sizes}
           research1={facultydata[0].node.research1}
           research2={facultydata[0].node.research2}
@@ -27,6 +29,8 @@ class PeoplePage extends React.Component {
         <Faculty
           name={facultydata[1].node.name}
           title={facultydata[1].node.title}
+          email={facultydata[1].node.email}
+          website={facultydata[1].node.website}
           image={this.props.data.JieImg.childImageSharp.sizes}
           research1={facultydata[1].node.research1}
           research2={facultydata[1].node.research2}
@@ -36,6 +40,8 @@ class PeoplePage extends React.Component {
         <Faculty
           name={facultydata[2].node.name}
           title={facultydata[2].node.title}
+          email={facultydata[2].node.email}
+          website={facultydata[2].node.website}
           image={this.props.data.AtousaImg.childImageSharp.sizes}
           research1={facultydata[2].node.research1}
           research2={facultydata[2].node.research2}

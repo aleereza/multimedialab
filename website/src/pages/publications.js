@@ -2,9 +2,13 @@ import React from 'react'
 // import styles from "./pages.module.css"
 import Layout from '../components/Layout/Layout'
 import PubItem from '../components/Content/PubItem/PubItem'
+import PubItemGroup from '../components/Content/PubItem/PubItemGroup'
 import { graphql } from "gatsby"
 // import {Index} from "elasticlunr"
 import elasticlunr from "elasticlunr"
+
+import Heading from "../components/Content/Heading/Heading"
+import SearchBar from "../components/Content/SearchBar/SearchBar"
 
 class PublicationsPage extends React.Component {
   constructor(props) {
@@ -19,14 +23,23 @@ class PublicationsPage extends React.Component {
     var index = elasticlunr(function () {
       this.addField('authors');
       this.addField('title');
+      this.addField('year');
+      this.addField('month');
+      this.addField('reference');
       this.setRef('index');
     });
     const publicationsdata = this.props.data.allPublications.edges
     publicationsdata.forEach(function(publication) {
       var doc = {
+          'index': publication.node.index,
           'authors': publication.node.authors,
           'title': publication.node.title,
-          'index': publication.node.index
+          'reference': publication.node.reference,
+          'month': publication.node.month,
+          'year': publication.node.year,
+          'type': publication.node.type,
+          'link': publication.node.link,
+          'code': publication.node.code,
       };
       index.addDoc(doc);
     });
@@ -40,7 +53,10 @@ class PublicationsPage extends React.Component {
           const config = {
             fields: {
                 title: {boost: 2},
-                authors: {boost: 1}
+                authors: {boost: 1},
+                reference: {boost: 1},
+                year: {boost: 1},
+                month: {boost: 1},
             },
             bool: "AND",
             expand: true
@@ -51,34 +67,57 @@ class PublicationsPage extends React.Component {
               // Query the index with search string to get an [] of IDs
               results: this.index.search(query, config)
                   // Map over each ID and return the full document
-                  .map(({
-                  ref,
-                  }) => this.index.documentStore.getDoc(ref)),
-          });
+                  .map(({ref,}) => this.index.documentStore.getDoc(ref)),});
   }
 
   render() {
-    const publicationsdata = this.props.data.allPublications.edges
+    // const publicationsdata = this.props.data.allPublications.edges
+    const publicationsdata_2018 = this.props.data.pub2018.edges
+    const publicationsdata_2017 = this.props.data.pub2017.edges
+    const publicationsdata_2016 = this.props.data.pub2016.edges
+    const publicationsdata_2015 = this.props.data.pub2015.edges
+    const publicationsdata_2014 = this.props.data.pub2014.edges
+    const publicationsdata_2013 = this.props.data.pub2013.edges
 
     if(this.state.query===''){
       return(
         <Layout>
-          <h1>Publications</h1>
-
           <div>
-            <input type="text" value={this.state.query} onChange={this.search}/>
-            {publicationsdata.map((row,i) => (
-                <PubItem key={i}
-                title={publicationsdata[i].node.title}
-                authors={publicationsdata[i].node.authors}
-                reference={publicationsdata[i].node.reference}
-                month={publicationsdata[i].node.month}
-                year={publicationsdata[i].node.year}
-                type={publicationsdata[i].node.type}
-                link={publicationsdata[i].node.link}
-                code={publicationsdata[i].node.code}
-                />
-            ))}
+            <SearchBar>
+              <input type="text" value={this.state.query} onChange={this.search} placeholder="Search..."/>
+            </SearchBar>
+            <PubItemGroup
+              year={"2018"}
+              pubdata={publicationsdata_2018}
+            />
+
+            <PubItemGroup
+              year={"2017"}
+              pubdata={publicationsdata_2017}
+            />
+
+            <PubItemGroup
+              year={"2016"}
+              pubdata={publicationsdata_2016}
+            />
+
+            <PubItemGroup
+              year={"2015"}
+              pubdata={publicationsdata_2015}
+            />
+
+            <PubItemGroup
+              year={"2014"}
+              pubdata={publicationsdata_2014}
+            />
+
+            <PubItemGroup
+              year={"2013"}
+              pubdata={publicationsdata_2013}
+            />
+
+            <p>For earlier publications, please refer to individual professor’s webpage.</p>
+
           </div>
 
         </Layout>
@@ -87,17 +126,24 @@ class PublicationsPage extends React.Component {
     else{
       return(
         <Layout>
-          <h1>Publications</h1>
-
           <div>
-            <input type="text" value={this.state.query} onChange={this.search}/>
-            <ul>
-              {this.state.results.map(p => (
-                <li>
-                  {p.title}
-                </li>
-              ))}
-            </ul>
+            <SearchBar>
+              <input type="text" value={this.state.query} onChange={this.search}/>
+            </SearchBar>
+
+            {this.state.results.map((r,i) => (
+              <PubItem key={i}
+              authors={r.authors}
+              title={r.title}
+              reference={r.reference}
+              month={r.month}
+              year={r.year}
+              type={r.type}
+              link={r.link}
+              code={r.code}
+              />
+            ))}
+
           </div>
 
         </Layout>
@@ -115,7 +161,9 @@ export default PublicationsPage
 //code: link to the code =
 export const publicationsQuery = graphql`
 query publicationsQuery {
-  allPublications: allPublicationsCsv {
+  allPublications: allPublicationsCsv(
+    sort: {fields: [index], order: ASC},
+  ){
     edges {
       node {
         index
@@ -130,5 +178,120 @@ query publicationsQuery {
       }
     }
   }
+
+  pub2018: allPublicationsCsv(
+    filter: { year: { eq: "2018" } },
+    sort: {fields: [index], order: ASC},
+  ){
+    edges {
+      node{
+        index
+        authors
+        title
+        reference
+        month
+        year
+        type
+        link
+        code
+      }
+    }
+  }
+
+  pub2017: allPublicationsCsv(
+    filter: { year: { eq: "2017" } },
+    sort: {fields: [index], order: ASC},
+  ){
+    edges {
+      node{
+        index
+        authors
+        title
+        reference
+        month
+        year
+        type
+        link
+        code
+      }
+    }
+  }
+
+  pub2016: allPublicationsCsv(
+    filter: { year: { eq: "2016" } },
+    sort: {fields: [index], order: ASC},
+  ){
+    edges {
+      node{
+        index
+        authors
+        title
+        reference
+        month
+        year
+        type
+        link
+        code
+      }
+    }
+  }
+
+  pub2015: allPublicationsCsv(
+    filter: { year: { eq: "2015" } },
+    sort: {fields: [index], order: ASC},
+  ){
+    edges {
+      node{
+        index
+        authors
+        title
+        reference
+        month
+        year
+        type
+        link
+        code
+      }
+    }
+  }
+
+  pub2014: allPublicationsCsv(
+    filter: { year: { eq: "2014" } },
+    sort: {fields: [index], order: ASC},
+  ){
+    edges {
+      node{
+        index
+        authors
+        title
+        reference
+        month
+        year
+        type
+        link
+        code
+      }
+    }
+  }
+
+  pub2013: allPublicationsCsv(
+    filter: { year: { eq: "2013" } },
+    sort: {fields: [index], order: ASC},
+  ){
+    edges {
+      node{
+        index
+        authors
+        title
+        reference
+        month
+        year
+        type
+        link
+        code
+      }
+    }
+  }
+
 }
 `

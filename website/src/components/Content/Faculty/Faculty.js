@@ -11,14 +11,26 @@ class Faculty extends React.Component {
             <Img sizes={this.props.image}/>
           </div>
           <div className={styles.info_left}>
-            <h2>{this.props.name}</h2>
-            <p className={styles.title}>{this.props.title}</p>
+            <div className={styles.info_left_1}>
+              <h2>{this.props.name}</h2>
+              <p className={styles.title}>{this.props.title}</p>
+            </div>
+            <div className={styles.info_left_2}>
+              <a className={styles.links} href={"mailto:"+this.props.email}>{this.props.email}</a>
+              <a className={styles.links} href={this.props.website}>{this.props.website}</a>
+            </div>
           </div>
         </div>
         <div className={styles.right_container}>
           <div className={styles.info_right}>
-            <h2>{this.props.name}</h2>
-            <p className={styles.title}>{this.props.title}</p>
+            <div className={styles.info_right_1}>
+              <h2>{this.props.name}</h2>
+              <p className={styles.title}>{this.props.title}</p>
+            </div>
+            <div className={styles.info_right_2}>
+              <a className={styles.links} href={"mailto:"+this.props.email}>{this.props.email}</a>
+              <a className={styles.links} href={this.props.website}>{this.props.website}</a>
+            </div>
           </div>
           <div className={styles.bio}>
             <p>
