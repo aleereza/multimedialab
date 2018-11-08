@@ -2,7 +2,7 @@ import React from "react";
 import PubItem from "./PubItem"
 import Heading from "../Heading/Heading"
 
-
+// a group of publications, used to render all publications of a specific year
 class PubItemGroup extends React.Component {
   render() {
     const data = this.props.pubdata

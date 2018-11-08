@@ -11,7 +11,7 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa";
 class PubItem extends React.Component {
   render() {
 
-    var containerclass, conferenceclass, bookclass
+    var containerclass
     containerclass = cx({
       [styles.container]: true,
       [styles.journalclass]: (this.props.type === "j"),
