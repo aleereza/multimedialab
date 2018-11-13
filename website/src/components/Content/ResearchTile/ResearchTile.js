@@ -15,9 +15,9 @@ class ResearchTile extends React.Component {
         </div>
         <div className={styles.text}>
           <h2>{this.props.title}</h2>
-          <p>{this.props.short}</p>
+
           <div className={styles.more_container}>
-            <IconContext.Provider value={{className: styles.icon, size: ".7rem", color: "black"}}>
+            <IconContext.Provider value={{className: styles.icon, size: ".7rem", color: "silver"}}>
               <div>
                 <Link to={"/research#"+this.props.index}><small className={styles.more}>more </small><FaChevronRight/></Link>
               </div>
@@ -31,7 +31,4 @@ class ResearchTile extends React.Component {
 
 export default ResearchTile
 
-// <Img fluid={props.image.fluid} backgroundColor={'#eeeeee'} />
-
-// <div className={styles.more_container}>
-// </div>
+// <p>{this.props.short}</p>

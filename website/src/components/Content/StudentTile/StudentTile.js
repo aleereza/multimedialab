@@ -38,6 +38,7 @@ class StudentTile extends React.Component {
         <div className={styles.text}>
           <h3>{this.props.name}</h3>
           <p className={styles.title}>{this.props.title}</p>
+          <p className={styles.research}>{this.props.research}</p>
 
           <IconContext.Provider value={{ className: styles.icon, size: "1.5rem", color: "#007096"}}>
             <div>

@@ -23,12 +23,18 @@ green: #1f7a1f #d6f5d6
 .journalclass:hover{
   background-color: #ffb3b3;
 }
+.journalclass .icon{
+  color: #990000;
+}
 
 .conferenceclass{
   border-color: #007399;
 }
 .conferenceclass:hover{
   background-color: #ccf2ff;
+}
+.conferenceclass .icon{
+  color: #007399;
 }
 
 .bookclass{
@@ -37,6 +43,11 @@ green: #1f7a1f #d6f5d6
 .bookclass:hover{
   background-color: #d6f5d6;
 }
+.bookclass .icon{
+  color: #1f7a1f;
+}
+
+
 
 .authors{
   font-weight: 700;
@@ -47,10 +58,6 @@ green: #1f7a1f #d6f5d6
 } */
 
 .icon {
-  /* position:absolute; */
-  /* right: 0; */
-  vertical-align: middle;
-  margin: .1rem;
   height: 1.4rem;
   width: 1.4rem;
   /* svg width and height don't work in firefox */
@@ -66,9 +73,19 @@ green: #1f7a1f #d6f5d6
 
 .iconcontainer{
   position: absolute;
-  right: .1rem;
+  right: 0;
   top: 0;
+  margin: 0;
   /* bottom: 0; */
+}
+
+.aclass {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1;
+  /* color: black;
+  height: 4rem; */
 }
 /* div{
   margin: 0;

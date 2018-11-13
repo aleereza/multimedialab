@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
         </ResearchSection>
 
         <PublicationsSection>
-          {[0,1,2,3,4,5].map((i) => (
+          {[0,1,2,3,4,5,6,7,8,9].map((i) => (
             <Publication
               key={i}
               authors={publicationsdata[i].node.authors}
@@ -125,7 +125,10 @@ export const pageQuery = graphql`
       }
     }
 
-    allImages: allFile(filter: { sourceInstanceName: { eq: "research_small" } }) {
+    allImages: allFile(
+      filter: { sourceInstanceName: { eq: "research_small" } },
+      sort: {fields: name, order: ASC},
+    ){
       edges{
         node {
           childImageSharp {

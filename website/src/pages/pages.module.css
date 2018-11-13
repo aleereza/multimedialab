@@ -40,9 +40,22 @@ green: #1f7a1f #d6f5d6
   margin-bottom: 1rem;
 }
 
+/*=========sponsor page=============*/
+.sponsortile_container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.sponsortile{
+  flex: 0 1 50%;
+  height: 10rem;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .studentstile{
+    flex: 0 1 33%;
+  }
+  .sponsortile{
     flex: 0 1 33%;
   }
 }
@@ -51,6 +64,10 @@ green: #1f7a1f #d6f5d6
   .studentstile{
     /* flex: 1 1 20%; */
     flex: 0 1 20%;
+    justify-content: space-between;
+  }
+  .sponsortile{
+    flex: 0 1 25%;
     justify-content: space-between;
   }
 }

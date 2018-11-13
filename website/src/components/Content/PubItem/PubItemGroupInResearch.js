@@ -3,6 +3,9 @@ import PubItem from "./PubItem"
 import cx from "classnames"
 import styles from "./pubitemgroupinresearch.module.css"
 
+import { FaChevronDown } from "react-icons/fa";
+import { IconContext } from "react-icons";
+
 class PubItemGroupInResearch extends React.Component {
   constructor(props){
     super(props);
@@ -19,10 +22,18 @@ class PubItemGroupInResearch extends React.Component {
       [styles.open]: this.state.show,
       [styles.close]: !this.state.show,
     })
+    var chevron
+    chevron = cx({
+      [styles.chevron]: true,
+      [styles.chevron_open]: this.state.show,
+    })
     return(
       <div className={styles.container}>
         <div className={styles.button} onClick={()=>this.change()}>
           Selected Publications
+          <IconContext.Provider value={{className: chevron}}>
+            <FaChevronDown/>
+          </IconContext.Provider>
         </div>
         <div className={publications_container}>
           {data.map((row,i) => (
@@ -33,8 +44,9 @@ class PubItemGroupInResearch extends React.Component {
               month={data[i].node.month}
               year={data[i].node.year}
               type={data[i].node.type}
-              link={data[i].node.link}
-              code={data[i].node.code}
+              link1={data[i].node.link1}
+              link2={data[i].node.link2}
+              link2_name={data[i].node.link2_name}
               />
           ))}
         </div>

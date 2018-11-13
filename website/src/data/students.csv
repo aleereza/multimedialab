@@ -1,17 +1,14 @@
-index,name,title,email,website,github,linkedin
-0,"Sample Student","Phd Student",email1@gmail.com,http://www.website1.com,http://www.github.com,http://www.linkedin.com
-1,"Yue-Meng Chen","Phd Student",email1@gmail.com,http://www.website1.com,,
-2,"Yu Gao","Phd Student",email2@gmail.com,http://www.website2.com,,
-3,"Hadi Hadizadeh","Phd Student",email3@gmail.com,http://www.website3.com,,
-4,"Hanieh Khalilian","Phd Student",email4@gmail.com,http://www.website4.com,,
-5,"Sayed Hossein Khatoonabadi","Phd Student",email5@gmail.com,http://www.website1.com,,
-6,"Choong-Hoon Kwak","Phd Student",email6@gmail.com,http://www.website2.com,,
-7",Carl Qian","Phd Student",email7@gmail.com,http://www.website3.com,,
-8,"Mehdi Seyfi","Phd Student",email8@gmail.com,http://www.website4.com,,
-9,"Xiaoyu Xiu","Phd Student",email9@gmail.com,http://www.website1.com,,
-10,"Dong Zhang","Phd Student",email1@gmail.com,http://www.website2.com,,
-11,"Andrew Au","MASc Student",email2@gmail.com,http://www.website3.com,,
-12,Parmida Beigi,"MASc Student",email3@gmail.com,http://www.website4.com,,
-13,Duncan Chan,"MASc Student",email4@gmail.com,http://www.website1.com,,
-14,Xiaozheng Huang,"MASc Student",email5@gmail.com,http://www.website2.com,,
-15,Xiao Luo,"MASc Student",email6@gmail.com,http://www.website3.com,,
+index,name,title,research,email,website,github,linkedin
+0,Sample Student,Ph.D. Student,,,,,
+1,Mohammad Akbari,Ph.D. Student,Deep learning,,,,https://www.linkedin.com/in/mohammad-akbari-89868b4a/
+2,Chongyuan Bi,Ph.D. Student,Source-channel coding,,,,https://www.linkedin.com/in/bi-chongyuan-76127620/
+3,Hyomin Choi,Ph.D. Student,"Image and video coding, deep learning",,https://sites.google.com/site/chyomin0914/,,
+4,Chinthaka Dinesh,Ph.D. Student,"Graph signal processing, load disaggregation",,https://www.researchgate.net/profile/Chinthaka_Dinesh2,,
+5,Elham Ideli,Ph.D. Student,"Speech processing and analysis, deep learning",,,,
+6,Jian Jin,Ph.D. Student,Multi-view video,,,,
+7,Binglin Li,Ph.D. Student,,,,,
+8,Saeed Ranjbar Alvar,Ph.D. Student,"Video coding, deep learning",,https://sites.google.com/site/saeedranjbaralvar/,,
+9,Lior Bragilevsky,M.A.Sc. Student,Deep learning,,,,https://www.linkedin.com/in/lior-bragilevsky-259b09143/
+10,Arlene Fu,M.A.Sc. Student,"Multimedia signal processing, deep learning",,http://www.sfu.ca/~jfa49/,,
+11,Alon Harell,M.A.Sc. Student,"Computational sustainability, deep learning",,,,
+12,Him Wai Ng,M.A.Sc. Student,Deep learning,,,,https://www.linkedin.com/in/him-wai-ng-a29b5319/

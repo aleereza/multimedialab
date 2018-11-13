@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import styles from "./pages.module.css"
+// import styles from "./pages.module.css"
 import Layout from '../components/Layout/Layout'
 import Research from "../components/Content/Research/Research"
 
@@ -17,7 +17,7 @@ class ResearchPage extends React.Component {
 
     return(
       <Layout>
-        <p>A paragraph about research in Multimedia Lab</p>
+        <p></p>
         <div>
           <Research
           title={researchdata[0].node.title}
@@ -99,8 +99,9 @@ export const pageQuery = graphql`
           month
           year
           type
-          link
-          code
+          link1
+          link2
+          link2_name
         }
       }
     }
@@ -118,8 +119,9 @@ export const pageQuery = graphql`
           month
           year
           type
-          link
-          code
+          link1
+          link2
+          link2_name
         }
       }
     }
@@ -137,8 +139,9 @@ export const pageQuery = graphql`
           month
           year
           type
-          link
-          code
+          link1
+          link2
+          link2_name
         }
       }
     }
@@ -156,8 +159,9 @@ export const pageQuery = graphql`
           month
           year
           type
-          link
-          code
+          link1
+          link2
+          link2_name
         }
       }
     }

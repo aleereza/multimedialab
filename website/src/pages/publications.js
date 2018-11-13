@@ -6,8 +6,6 @@ import PubItemGroup from '../components/Content/PubItem/PubItemGroup'
 import { graphql } from "gatsby"
 // import {Index} from "elasticlunr"
 import elasticlunr from "elasticlunr"
-
-import Heading from "../components/Content/Heading/Heading"
 import SearchBar from "../components/Content/SearchBar/SearchBar"
 
 class PublicationsPage extends React.Component {
@@ -38,8 +36,9 @@ class PublicationsPage extends React.Component {
           'month': publication.node.month,
           'year': publication.node.year,
           'type': publication.node.type,
-          'link': publication.node.link,
-          'code': publication.node.code,
+          'link1': publication.node.link1,
+          'link2': publication.node.link2,
+          'link2_name': publication.node.link2_name,
       };
       index.addDoc(doc);
     });
@@ -139,8 +138,9 @@ class PublicationsPage extends React.Component {
               month={r.month}
               year={r.year}
               type={r.type}
-              link={r.link}
-              code={r.code}
+              link1={r.link1}
+              link2={r.link2}
+              link2_name={r.link2_name}
               />
             ))}
 
@@ -158,7 +158,6 @@ export default PublicationsPage
 // in data>publications:
 //type: type of poblication: j (journal), c (conference), b (book)
 //research: index number of the reaserch wich the publication related to
-//code: link to the code =
 export const publicationsQuery = graphql`
 query publicationsQuery {
   allPublications: allPublicationsCsv(
@@ -173,8 +172,9 @@ query publicationsQuery {
         month
         year
         type
-        link
-        code
+        link1
+        link2
+        link2_name
       }
     }
   }
@@ -192,8 +192,9 @@ query publicationsQuery {
         month
         year
         type
-        link
-        code
+        link1
+        link2
+        link2_name
       }
     }
   }
@@ -211,8 +212,9 @@ query publicationsQuery {
         month
         year
         type
-        link
-        code
+        link1
+        link2
+        link2_name
       }
     }
   }
@@ -230,8 +232,9 @@ query publicationsQuery {
         month
         year
         type
-        link
-        code
+        link1
+        link2
+        link2_name
       }
     }
   }
@@ -249,8 +252,9 @@ query publicationsQuery {
         month
         year
         type
-        link
-        code
+        link1
+        link2
+        link2_name
       }
     }
   }
@@ -268,8 +272,9 @@ query publicationsQuery {
         month
         year
         type
-        link
-        code
+        link1
+        link2
+        link2_name
       }
     }
   }
@@ -287,8 +292,9 @@ query publicationsQuery {
         month
         year
         type
-        link
-        code
+        link1
+        link2
+        link2_name
       }
     }
   }

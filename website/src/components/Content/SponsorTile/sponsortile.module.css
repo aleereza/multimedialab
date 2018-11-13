@@ -1,0 +1,24 @@
+.container {
+  overflow: hidden;
+  padding-top: 2rem;
+  /* height: 100%; */
+  /* display: table; */
+}
+.cell {
+  /* display: table-row; */
+}
+
+.image {
+  /* background-color: #777; */
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+
+.text {
+  padding: .5rem;
+  text-align: center;
+}
+.text h3{
+  margin: 0;
+}

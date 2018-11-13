@@ -18,8 +18,9 @@ class PubItemGroup extends React.Component {
             month={data[i].node.month}
             year={data[i].node.year}
             type={data[i].node.type}
-            link={data[i].node.link}
-            code={data[i].node.code}
+            link1={data[i].node.link1}
+            link2={data[i].node.link2}
+            link2_name={data[i].node.link2_name}
             />
         ))}
       </div>

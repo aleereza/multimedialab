@@ -29,13 +29,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `research_large`,
-        path: `${__dirname}/src/images/research_large/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `students_images`,
         path: `${__dirname}/src/images/students/`,
       },
@@ -45,6 +38,13 @@ module.exports = {
       options: {
         name: `faculty_images`,
         path: `${__dirname}/src/images/faculty/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `logos`,
+        path: `${__dirname}/src/images/logos/`,
       },
     },
     `gatsby-transformer-sharp`,
