@@ -6,15 +6,11 @@ green: #1f7a1f #d6f5d6
 */
 
 .container{
-  /* border-left: 5px solid; */
   border-style: solid;
-  border-width: 1px 1px 1px 5px;;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  border-width: 1px 1px 1px 7px;;
   margin-top: .2rem;
   margin-bottom: .2rem;
   position: relative;
-  min-height: 3.2rem;
 }
 
 .journalclass {
@@ -47,15 +43,9 @@ green: #1f7a1f #d6f5d6
   color: #1f7a1f;
 }
 
-
-
 .authors{
   font-weight: 700;
 }
-
-/* .reference{
-  font-weight: 700;
-} */
 
 .icon {
   height: 1.4rem;
@@ -68,7 +58,9 @@ green: #1f7a1f #d6f5d6
 }
 
 .textcontainer{
-  margin-right: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-right: 1.4rem;
 }
 
 .iconcontainer{

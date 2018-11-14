@@ -1,17 +1,22 @@
 .container {
   overflow: hidden;
-  padding-top: 2rem;
-  /* height: 100%; */
-  /* display: table; */
+  margin-top: 2rem;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 .cell {
-  /* display: table-row; */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
+.aclass{
+  display: block;
+  margin: .5rem;
+}
 .image {
-  /* background-color: #777; */
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 
 }
 

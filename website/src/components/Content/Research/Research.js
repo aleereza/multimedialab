@@ -26,5 +26,3 @@ class Research extends React.Component {
 }
 
 export default Research
-
-// <Img fluid={props.image.fluid} backgroundColor={'#eeeeee'} />

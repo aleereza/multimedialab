@@ -12,9 +12,6 @@ class SponsorTile extends React.Component {
             <div className={styles.image}>
               <Img sizes={this.props.image}/>
             </div>
-            <div className={styles.text}>
-              <h3>{this.props.name}</h3>
-            </div>
           </a>
         </div>
       </div>

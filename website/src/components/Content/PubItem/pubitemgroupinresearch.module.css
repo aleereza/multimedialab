@@ -5,12 +5,12 @@
 
 .publications_container{
   transition: max-height .5s;
+  max-height: 0;
+  overflow-y: hidden;
+  /* transition: height .5s; */
 }
 .open{
   max-height: 500px;
-}
-.close{
-  max-height: 0;
 }
 
 .button{
@@ -31,8 +31,4 @@
 }
 .chevron_open{
   transform: rotate(180deg);
-
-}
-.chevron_close{
-  /* transform: rotate(180deg); */
 }

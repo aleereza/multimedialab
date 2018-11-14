@@ -20,7 +20,6 @@ class PubItemGroupInResearch extends React.Component {
     publications_container = cx({
       [styles.publications_container]: true,
       [styles.open]: this.state.show,
-      [styles.close]: !this.state.show,
     })
     var chevron
     chevron = cx({
