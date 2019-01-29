@@ -14,12 +14,14 @@ class Research extends React.Component {
           </div>
           <div className={styles.text}>
             <h2>{this.props.title}</h2>
-            <p>{this.props.long}</p>
-          </div>
+	    <p>{this.props.long}</p>
+            <h3>Selected Publications</h3>
+            <PubItemGroupInResearch
+            pubdata={this.props.pubdata}
+            />
+	  </div>
         </div>
-        <PubItemGroupInResearch
-          pubdata={this.props.pubdata}
-        />
+       
       </div>
     );
   }

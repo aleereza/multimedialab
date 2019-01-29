@@ -20,6 +20,7 @@ class PubItemGroup extends React.Component {
             type={data[i].node.type}
             link1={data[i].node.link1}
             link2={data[i].node.link2}
+            link1_name={data[i].node.link1_name}
             link2_name={data[i].node.link2_name}
             />
         ))}

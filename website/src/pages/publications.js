@@ -140,6 +140,7 @@ class PublicationsPage extends React.Component {
               type={r.type}
               link1={r.link1}
               link2={r.link2}
+              link1_name={r.link1_name}
               link2_name={r.link2_name}
               />
             ))}
@@ -174,7 +175,8 @@ query publicationsQuery {
         type
         link1
         link2
-        link2_name
+	link1_name
+	link2_name
       }
     }
   }
@@ -194,6 +196,7 @@ query publicationsQuery {
         type
         link1
         link2
+	link1_name
         link2_name
       }
     }
@@ -214,6 +217,7 @@ query publicationsQuery {
         type
         link1
         link2
+	link1_name
         link2_name
       }
     }
@@ -234,6 +238,7 @@ query publicationsQuery {
         type
         link1
         link2
+	link1_name
         link2_name
       }
     }
@@ -254,6 +259,7 @@ query publicationsQuery {
         type
         link1
         link2
+	link1_name
         link2_name
       }
     }
@@ -274,6 +280,7 @@ query publicationsQuery {
         type
         link1
         link2
+	link1_name
         link2_name
       }
     }
@@ -294,6 +301,7 @@ query publicationsQuery {
         type
         link1
         link2
+	link1_name
         link2_name
       }
     }

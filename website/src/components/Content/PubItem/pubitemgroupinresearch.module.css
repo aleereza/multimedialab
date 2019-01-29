@@ -4,31 +4,7 @@
 }
 
 .publications_container{
-  transition: max-height .5s;
-  max-height: 0;
   overflow-y: hidden;
   /* transition: height .5s; */
 }
-.open{
-  max-height: 500px;
-}
 
-.button{
-  text-align: center;
-  color: white;
-  background-color: #54585A;
-  cursor: pointer;
-  margin: 0;
-  /* line-height: 1; */
-}
-.chevron{
-  /* padding-top:.2rem; */
-  width: 1rem;
-  height: 1rem;
-  margin-left:1rem;
-  transition: transform .5s;
-  /* line-height: 3; */
-}
-.chevron_open{
-  transform: rotate(180deg);
-}

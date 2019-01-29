@@ -101,6 +101,7 @@ export const pageQuery = graphql`
           type
           link1
           link2
+          link1_name
           link2_name
         }
       }
@@ -121,6 +122,7 @@ export const pageQuery = graphql`
           type
           link1
           link2
+          link1_name
           link2_name
         }
       }
@@ -141,6 +143,7 @@ export const pageQuery = graphql`
           type
           link1
           link2
+          link1_name
           link2_name
         }
       }
@@ -161,6 +164,7 @@ export const pageQuery = graphql`
           type
           link1
           link2
+          link1_name
           link2_name
         }
       }

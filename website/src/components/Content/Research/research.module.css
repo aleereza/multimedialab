@@ -15,6 +15,9 @@
 .text h2{
   margin: 0;
 }
+.text h3{
+  margin: .3rem 0 0 0; 
+}
 .title{
   font-size: .8rem;
   color: dimgray;
