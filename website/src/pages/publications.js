@@ -38,6 +38,7 @@ class PublicationsPage extends React.Component {
           'type': publication.node.type,
           'link1': publication.node.link1,
           'link2': publication.node.link2,
+          'link1_name': publication.node.link1_name,
           'link2_name': publication.node.link2_name,
       };
       index.addDoc(doc);
@@ -135,6 +136,7 @@ class PublicationsPage extends React.Component {
               authors={r.authors}
               title={r.title}
               reference={r.reference}
+              reference_detail={r.reference_detail}
               month={r.month}
               year={r.year}
               type={r.type}
@@ -170,6 +172,7 @@ query publicationsQuery {
         authors
         title
         reference
+	reference_detail
         month
         year
         type
@@ -191,6 +194,7 @@ query publicationsQuery {
         authors
         title
         reference
+	reference_detail
         month
         year
         type
@@ -212,6 +216,7 @@ query publicationsQuery {
         authors
         title
         reference
+	reference_detail
         month
         year
         type
@@ -233,6 +238,7 @@ query publicationsQuery {
         authors
         title
         reference
+	reference_detail
         month
         year
         type
@@ -254,6 +260,7 @@ query publicationsQuery {
         authors
         title
         reference
+	reference_detail
         month
         year
         type
@@ -275,6 +282,7 @@ query publicationsQuery {
         authors
         title
         reference
+	reference_detail
         month
         year
         type
@@ -296,6 +304,7 @@ query publicationsQuery {
         authors
         title
         reference
+	reference_detail
         month
         year
         type

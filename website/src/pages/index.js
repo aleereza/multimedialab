@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
   render() {
     const researchdata = this.props.data.allResearch.edges
     const researchimagesdata = this.props.data.allImages.edges
-    const publicationsdata = this.props.data.allPublications.edges
+    const publicationsdata = this.props.data.selectedPublications.edges
     const facultydata = this.props.data.allFaculty.edges
 
     return(
@@ -41,12 +41,13 @@ class IndexPage extends React.Component {
         </ResearchSection>
 
         <PublicationsSection>
-          {[0,1,2,3,4,5,6,7,8,9].map((i) => (
+          {publicationsdata.map((row,i) => (
             <Publication
               key={i}
               authors={publicationsdata[i].node.authors}
               title={publicationsdata[i].node.title}
               reference={publicationsdata[i].node.reference}
+              reference_detail={publicationsdata[i].node.reference_detail}
               month={publicationsdata[i].node.month}
               year={publicationsdata[i].node.year}
             />
@@ -89,12 +90,16 @@ class IndexPage extends React.Component {
 export const pageQuery = graphql`
   query {
 
-    allPublications: allPublicationsCsv {
+    selectedPublications: allPublicationsCsv(
+      filter: { selected: { eq: "1" } },
+      sort: {fields: [index], order: ASC},
+    ){
       edges {
         node {
           authors
           title
-          reference
+	  reference
+	  reference_detail
           month
           year
         }

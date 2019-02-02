@@ -29,7 +29,8 @@ class PubItem extends React.Component {
           <span>, </span>
           <span className={styles.title}>{this.props.title}</span>
           <span>, </span>
-          <span className={styles.reference}>{this.props.reference} </span>
+          <span className={styles.reference}>{this.props.reference}, </span>
+          <span className={styles.month}>{this.props.reference_detail} </span>
           <span className={styles.month}>{this.props.month}. </span>
           <span className={styles.year}>{this.props.year}.</span>
           <a className={displaylink1} href={this.props.link1}> [{this.props.link1_name}]</a>

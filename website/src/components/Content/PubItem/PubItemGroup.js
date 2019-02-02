@@ -15,6 +15,7 @@ class PubItemGroup extends React.Component {
             title={data[i].node.title}
             authors={data[i].node.authors}
             reference={data[i].node.reference}
+            reference_detail={data[i].node.reference_detail}
             month={data[i].node.month}
             year={data[i].node.year}
             type={data[i].node.type}
