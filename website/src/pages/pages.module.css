@@ -16,11 +16,9 @@ green: #1f7a1f #d6f5d6
 
 
 /*=========home page=============*/
-.introsection {
-  margin-top: .5rem;
-}
-.introsection p{
-  margin: 0;
+
+.publications_section{
+  flex: 2 0 0;
 }
 
 

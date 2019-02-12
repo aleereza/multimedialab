@@ -23,10 +23,7 @@ class IndexPage extends React.Component {
 
     return(
       <Layout>
-        <div className={styles.introsection}>
-          <p>SFU Multimedia Lab was founded in the early 1990’s by the late Dr. Jacques Vaisey, as the Image Communications Laboratory. In 2004 and 2005, Drs. Jie Liang, Atousa Hajshirmohammadi, and Ivan Bajić joined SFU, and the lab was renamed to Multimedia Communications Laboratory. In recent years, the lab’s name has evolved to the Multimedia Lab, to reflect the breadth of the research being undertaken. Our work encompases multimedia signal processing, compression, communications, multimedia ergonomics, analytics, and AI.
-          </p>
-        </div>
+       
 
         <ResearchSection>
           {[0,1,2,3].map((i) => (
@@ -40,19 +37,22 @@ class IndexPage extends React.Component {
           ))}
         </ResearchSection>
 
-        <PublicationsSection>
-          {publicationsdata.map((row,i) => (
-            <Publication
-              key={i}
-              authors={publicationsdata[i].node.authors}
-              title={publicationsdata[i].node.title}
-              reference={publicationsdata[i].node.reference}
-              reference_detail={publicationsdata[i].node.reference_detail}
-              month={publicationsdata[i].node.month}
-              year={publicationsdata[i].node.year}
-            />
-          ))}
-        </PublicationsSection>
+	    
+	   <div className={styles.publications_section}>
+           <PublicationsSection>
+            {publicationsdata.map((row,i) => (
+              <Publication
+                key={i}
+                authors={publicationsdata[i].node.authors}
+                title={publicationsdata[i].node.title}
+                reference={publicationsdata[i].node.reference}
+                reference_detail={publicationsdata[i].node.reference_detail}
+                month={publicationsdata[i].node.month}
+                year={publicationsdata[i].node.year}
+              />
+            ))}
+           </PublicationsSection>
+           </div>
 
         <FacultySection>
             <FacultyTile

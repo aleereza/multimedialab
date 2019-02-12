@@ -3,7 +3,7 @@
   /* background-color: #A6192E; */
   /* border-radius: .3rem; */
   overflow: hidden;
-  margin: .5rem;
+  margin: 1rem;
   flex: 1 1 100%;
 }
 .image{
@@ -11,7 +11,7 @@
   /* border: 1px solid blue; */
 }
 .text {
-  padding: .5rem;
+  padding: 1rem;
   background: #54585A;
 }
 .text h2{

@@ -4,15 +4,15 @@
   border-left: 1px solid #777;
   border-bottom: 1px solid #777;
   overflow: hidden;
-  margin: .5rem;
+  margin: 1rem;
   flex: 1 1 100%;
 }
 .image{
   /* border-radius: .5rem; */
-  max-width: 300px;
+  max-width: 250px;
 }
 .text {
-  padding: .5rem;
+  padding: 1rem;
 }
 .text h2{
   margin: 0;
