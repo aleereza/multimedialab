@@ -72,6 +72,7 @@ class PeoplePage extends React.Component {
         </div>
 
         <Heading text="Alumni"/>
+        <div className={styles.alumni_container}>
         <p>We are proud of our alumni. Most of them have gone on to join the leading tech companies, internationally (e.g., Amazon, Apple, Google, Microsoft) and locally (e.g., MDA, Broadcom, Sierra Wireless, AltumView Systems). A number of them have started their own companies, or chosen to pursue careers in academia.
         </p>
         <ul>
@@ -131,7 +132,9 @@ class PeoplePage extends React.Component {
           <li>David Hargreaves (M.A.Sc. 1994, Vice President of MDA)</li>
           <li>David Houlding (M.A.Sc. 1994, Principal Healthcare Program Manager at Microsoft)</li>
         </ul>
+        </div>
         <Heading text="Visitors"/>
+        <div className={styles.visitors_container}>
         <ul>
           <li>Prof. Yanshan Xiao, China Three Gorges University (2018-2019)</li>
           <li>Prof. Yingchun Wu, Taiyuan University of Science and Technology, China (2018-2019)</li>
@@ -154,7 +157,7 @@ class PeoplePage extends React.Component {
           <li><a href="http://dance.arts.uci.edu/john-crawford">Prof. John Crawford</a>, UC Irvine (2008)</li>
           <li>Lijie Liu, Johns Hopkins University (2005)</li>
         </ul>
-
+        </div>
       </Layout>
     )
   }

@@ -36,6 +36,21 @@
   line-height: .9rem;
   margin-bottom: .5rem;
 }
+.more_container{
+  text-align: left;
+  /* height: 1rem; */
+}
+.more{
+  color: grey;
+  vertical-align:middle;
+  line-height:1;
+}
+.icon{
+  vertical-align:middle;
+  height: .7rem;
+  /* svg width and height don't work in firefox */
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {

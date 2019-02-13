@@ -7,7 +7,7 @@ import PubItemGroupInResearch from "../PubItem/PubItemGroupInResearch"
 class Research extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id={this.props.id}>
         <div className={styles.container_1}>
           <div className={styles.image}>
             <Img sizes={this.props.image}/>

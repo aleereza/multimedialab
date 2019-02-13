@@ -17,12 +17,12 @@ class ResearchPage extends React.Component {
 
     return(
       <Layout>
-        <p></p>
         <div>
           <Research
           title={researchdata[0].node.title}
           long={researchdata[0].node.long}
           image={researchimagesdata[0].node.childImageSharp.sizes}
+	  id="0"
           pubdata={publication_research1}
           />
 
@@ -30,6 +30,7 @@ class ResearchPage extends React.Component {
           title={researchdata[1].node.title}
           long={researchdata[1].node.long}
           image={researchimagesdata[1].node.childImageSharp.sizes}
+	  id="1"
           pubdata={publication_research2}
           />
 
@@ -37,6 +38,7 @@ class ResearchPage extends React.Component {
           title={researchdata[2].node.title}
           long={researchdata[2].node.long}
           image={researchimagesdata[2].node.childImageSharp.sizes}
+	  id="2"
           pubdata={publication_research3}
           />
 
@@ -44,6 +46,7 @@ class ResearchPage extends React.Component {
           title={researchdata[3].node.title}
           long={researchdata[3].node.long}
           image={researchimagesdata[3].node.childImageSharp.sizes}
+	  id="3"
           pubdata={publication_research4}
           />
 

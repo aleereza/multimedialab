@@ -59,6 +59,7 @@ class IndexPage extends React.Component {
               name={facultydata[0].node.name}
               title={facultydata[0].node.title}
               image={this.props.data.IvanImg.childImageSharp.sizes}
+              website={facultydata[0].node.website}
               research1={facultydata[0].node.research1}
               research2={facultydata[0].node.research2}
               research3={facultydata[0].node.research3}
@@ -67,6 +68,7 @@ class IndexPage extends React.Component {
               name={facultydata[1].node.name}
               title={facultydata[1].node.title}
               image={this.props.data.JieImg.childImageSharp.sizes}
+              website={facultydata[1].node.website}
               research1={facultydata[1].node.research1}
               research2={facultydata[1].node.research2}
               research3={facultydata[1].node.research3}
@@ -75,6 +77,7 @@ class IndexPage extends React.Component {
               name={facultydata[2].node.name}
               title={facultydata[2].node.title}
               image={this.props.data.AtousaImg.childImageSharp.sizes}
+              website={facultydata[2].node.website}
               research1={facultydata[2].node.research1}
               research2={facultydata[2].node.research2}
               research3={facultydata[2].node.research3}

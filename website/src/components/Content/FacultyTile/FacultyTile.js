@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "./facultytile.module.css"
 import Img from "gatsby-image"
+import { FaChevronRight } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 class FacultyTile extends React.Component {
   render() {
@@ -18,6 +20,14 @@ class FacultyTile extends React.Component {
             <li>{this.props.research2}</li>
             <li>{this.props.research3}</li>
           </ul>
+          <div className={styles.more_container}>
+            <IconContext.Provider value={{className: styles.icon, size: ".7rem", color: "silver"}}>
+              <div>
+                <a href={this.props.website}><small className={styles.more}>website </small><FaChevronRight/></a>
+              </div>
+            </IconContext.Provider>
+          </div>
+ 
         </div>
       </div>
     );

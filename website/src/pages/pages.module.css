@@ -33,6 +33,9 @@ green: #1f7a1f #d6f5d6
 .studentstile{
   flex: 0 1 50%;
 }
+.alumni_container, .visitors_container {
+  margin: 1rem;
+}
 /*=========research page=============*/
 .research_container{
   margin-bottom: 1rem;
