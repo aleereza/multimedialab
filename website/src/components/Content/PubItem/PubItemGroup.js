@@ -1,6 +1,7 @@
 import React from "react";
 import PubItem from "./PubItem"
 import Heading from "../Heading/Heading"
+import styles from "./pubitemgroup.module.css"
 
 // a group of publications, used to render all publications of a specific year
 class PubItemGroup extends React.Component {
@@ -10,6 +11,7 @@ class PubItemGroup extends React.Component {
     return(
       <div>
         <Heading text={year}/>
+	<div className={styles.container}>
         {data.map((row,i) => (
             <PubItem key={i}
             title={data[i].node.title}
@@ -24,7 +26,8 @@ class PubItemGroup extends React.Component {
             link1_name={data[i].node.link1_name}
             link2_name={data[i].node.link2_name}
             />
-        ))}
+	))}
+        </div>
       </div>
     )
 
