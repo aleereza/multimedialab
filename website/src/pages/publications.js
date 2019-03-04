@@ -1,5 +1,5 @@
 import React from 'react'
-// import styles from "./pages.module.css"
+import styles from "./pages.module.css"
 import Layout from '../components/Layout/Layout'
 import PubItem from '../components/Content/PubItem/PubItem'
 import PubItemGroup from '../components/Content/PubItem/PubItemGroup'
@@ -130,7 +130,7 @@ class PublicationsPage extends React.Component {
             <SearchBar>
               <input type="text" value={this.state.query} onChange={this.search}/>
             </SearchBar>
-
+            <div className={styles.results_container}>
             {this.state.results.map((r,i) => (
               <PubItem key={i}
               authors={r.authors}
@@ -146,7 +146,7 @@ class PublicationsPage extends React.Component {
               link2_name={r.link2_name}
               />
             ))}
-
+            </div>
           </div>
 
         </Layout>
