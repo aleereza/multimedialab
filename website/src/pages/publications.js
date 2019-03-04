@@ -72,6 +72,7 @@ class PublicationsPage extends React.Component {
 
   render() {
     // const publicationsdata = this.props.data.allPublications.edges
+	const publicationsdata_2019 = this.props.data.pub2019.edges
     const publicationsdata_2018 = this.props.data.pub2018.edges
     const publicationsdata_2017 = this.props.data.pub2017.edges
     const publicationsdata_2016 = this.props.data.pub2016.edges
@@ -86,6 +87,12 @@ class PublicationsPage extends React.Component {
             <SearchBar>
               <input type="text" value={this.state.query} onChange={this.search} placeholder="Search..."/>
             </SearchBar>
+			
+			<PubItemGroup
+              year={"2019"}
+              pubdata={publicationsdata_2019}
+            />
+			
             <PubItemGroup
               year={"2018"}
               pubdata={publicationsdata_2018}
@@ -180,6 +187,28 @@ query publicationsQuery {
         link2
 	link1_name
 	link2_name
+      }
+    }
+  }
+  
+  pub2019: allPublicationsCsv(
+    filter: { year: { eq: "2019" } },
+    sort: {fields: [index], order: ASC},
+  ){
+    edges {
+      node{
+        index
+        authors
+        title
+        reference
+	reference_detail
+        month
+        year
+        type
+        link1
+        link2
+	link1_name
+        link2_name
       }
     }
   }
