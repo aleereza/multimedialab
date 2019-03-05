@@ -1,9 +1,11 @@
 .container{
-  background-color: #A6192E;
-  padding: .25rem;
+  /* background-color: #A6192E; */
+  background-color: #F6F6F6; 
+  /* padding: .25rem; */
+  padding: 1rem;
 }
 .heading {
-  color: white;
+  /*color: white; */
   text-align: center;
   margin: 0;
 }

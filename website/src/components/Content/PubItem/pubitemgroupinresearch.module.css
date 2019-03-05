@@ -6,5 +6,6 @@
 .publications_container{
   overflow-y: hidden;
   /* transition: height .5s; */
+  font-size: .8rem;
 }
 

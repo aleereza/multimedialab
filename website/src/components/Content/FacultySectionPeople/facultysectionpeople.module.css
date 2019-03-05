@@ -1,0 +1,12 @@
+.tilescontainer{
+  display: flex;
+  flex-flow: row wrap;
+}
+.more{
+  text-align: right;
+}
+.more small{
+  margin: 0;
+  line-height: 1;
+  color: black;
+}

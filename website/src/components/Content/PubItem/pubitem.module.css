@@ -8,10 +8,10 @@ green: #1f7a1f #d6f5d6
 .container{
   border-style: solid;
   border-width: 0px 0px 0px 7px;
-  margin-top: .3rem;
-  margin-bottom: .3rem;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
   position: relative;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 }
 
 .journalclass {
@@ -35,9 +35,15 @@ green: #1f7a1f #d6f5d6
   color: #1f7a1f;
 }
 
-.authors{
-  font-weight: 700;
+/* .authors{
+  font-weight: 700; 
+} */
+
+.title{
+  /* color: #002145; */
+  font-weight: bold; 
 }
+
 .reference{
   font-style: italic;
 }

@@ -23,7 +23,7 @@ class FacultyTile extends React.Component {
           <div className={styles.more_container}>
             <IconContext.Provider value={{className: styles.icon, size: ".7rem", color: "silver"}}>
               <div>
-                <a href={this.props.website}><small className={styles.more}>website </small><FaChevronRight/></a>
+                <a href={this.props.website} target="_blank"><small className={styles.more}>website </small><FaChevronRight/></a>
               </div>
             </IconContext.Provider>
           </div>

@@ -84,10 +84,7 @@ class PublicationsPage extends React.Component {
       return(
         <Layout>
           <div>
-            <SearchBar>
-              <input type="text" value={this.state.query} onChange={this.search} placeholder="Search..."/>
-            </SearchBar>
-			
+            
 			<PubItemGroup
               year={"2019"}
               pubdata={publicationsdata_2019}

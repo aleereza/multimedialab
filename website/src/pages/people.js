@@ -3,8 +3,10 @@ import styles from "./pages.module.css"
 import { graphql } from "gatsby"
 import Layout from '../components/Layout/Layout'
 import StudentTile from "../components/Content/StudentTile/StudentTile"
-import Faculty from "../components/Content/Faculty/Faculty"
+import Faculty from "../components/Content/Faculty/Faculty" 
 import Heading from "../components/Content/Heading/Heading"
+import FacultySectionPeople from "../components/Content/FacultySectionPeople/FacultySectionPeople"
+import FacultyTile from "../components/Content/FacultyTile/FacultyTile"
 
 class PeoplePage extends React.Component {
 
@@ -15,39 +17,36 @@ class PeoplePage extends React.Component {
     return(
       <Layout>
         <Heading text="Faculty"/>
-        <Faculty
-          name={facultydata[0].node.name}
-          title={facultydata[0].node.title}
-          email={facultydata[0].node.email}
-          website={facultydata[0].node.website}
-          image={this.props.data.IvanImg.childImageSharp.sizes}
-          research1={facultydata[0].node.research1}
-          research2={facultydata[0].node.research2}
-          research3={facultydata[0].node.research3}
-          bio={facultydata[0].node.bio}
-        />
-        <Faculty
-          name={facultydata[1].node.name}
-          title={facultydata[1].node.title}
-          email={facultydata[1].node.email}
-          website={facultydata[1].node.website}
-          image={this.props.data.JieImg.childImageSharp.sizes}
-          research1={facultydata[1].node.research1}
-          research2={facultydata[1].node.research2}
-          research3={facultydata[1].node.research3}
-          bio={facultydata[1].node.bio}
-        />
-        <Faculty
-          name={facultydata[2].node.name}
-          title={facultydata[2].node.title}
-          email={facultydata[2].node.email}
-          website={facultydata[2].node.website}
-          image={this.props.data.AtousaImg.childImageSharp.sizes}
-          research1={facultydata[2].node.research1}
-          research2={facultydata[2].node.research2}
-          research3={facultydata[2].node.research3}
-          bio={facultydata[2].node.bio}
-        />
+		<FacultySectionPeople>
+			<FacultyTile
+              name={facultydata[0].node.name}
+              title={facultydata[0].node.title}
+              image={this.props.data.IvanImg.childImageSharp.sizes}
+              website={facultydata[0].node.website}
+              research1={facultydata[0].node.research1}
+              research2={facultydata[0].node.research2}
+              research3={facultydata[0].node.research3}
+            />
+            <FacultyTile
+              name={facultydata[1].node.name}
+              title={facultydata[1].node.title}
+              image={this.props.data.JieImg.childImageSharp.sizes}
+              website={facultydata[1].node.website}
+              research1={facultydata[1].node.research1}
+              research2={facultydata[1].node.research2}
+              research3={facultydata[1].node.research3}
+            />
+            <FacultyTile
+              name={facultydata[2].node.name}
+              title={facultydata[2].node.title}
+              image={this.props.data.AtousaImg.childImageSharp.sizes}
+              website={facultydata[2].node.website}
+              research1={facultydata[2].node.research1}
+              research2={facultydata[2].node.research2}
+              research3={facultydata[2].node.research3}
+            />
+		</FacultySectionPeople>
+        
 
         <Heading text="Students"/>
         <div className={styles.studentstile_container}>
@@ -76,7 +75,7 @@ class PeoplePage extends React.Component {
         <p>We are proud of our alumni. Most of them have gone on to join the leading tech companies, internationally (e.g., Amazon, Apple, Google, Microsoft) and locally (e.g., MDA, Broadcom, Sierra Wireless, AltumView Systems). A number of them have started their own companies, or chosen to pursue careers in academia.
         </p>
         <ul>
-          <li>Stephen Makonin (PostDoc 2017-18, now with Knowledge Network and Adjunct Professor at SFU)</li>
+          <li>Stephen Makonin (PostDoc 2017-18, now Adjunct Professor at SFU)</li>
           <li>Yijian Wang (M.A.Sc. 2017, now with SAP)</li>
           <li>James Lin (M.A.Sc. 2017, Co-Founder of KnowIdea)</li>
           <li>Hanieh Khalilian (Ph.D. 2016, now with MDA)</li>
@@ -127,7 +126,7 @@ class PeoplePage extends React.Component {
         <h2>Earlier Alumni (students of Dr. J. Vaisey)</h2>
         <ul>
           <li>Chen Ji (M.A.Sc. 2001)</li>
-          <li><a href="http://www.kpsuba.com/">K.P. Subbalakshmi</a> (Ph.D. 2000, now Professor at Stevens Institute of Technology)</li>
+          <li><a href="http://www.kpsuba.com/" target="_blank">K.P. Subbalakshmi</a> (Ph.D. 2000, now Professor at Stevens Institute of Technology)</li>
           <li>Ed Chiu (M.A.Sc. 1999)</li>
           <li>David Hargreaves (M.A.Sc. 1994, Vice President of MDA)</li>
           <li>David Houlding (M.A.Sc. 1994, Principal Healthcare Program Manager at Microsoft)</li>
@@ -138,23 +137,23 @@ class PeoplePage extends React.Component {
         <ul>
           <li>Prof. Yanshan Xiao, China Three Gorges University (2018-2019)</li>
           <li>Prof. Yingchun Wu, Taiyuan University of Science and Technology, China (2018-2019)</li>
-          <li><a href="https://github.com/harshanavkis">Harshavardhan Unnibhavi</a>, Indian Institute of Technology (ISM), Dhanbad (2018)</li>
+          <li><a href="https://github.com/harshanavkis" target="_blank">Harshavardhan Unnibhavi</a>, Indian Institute of Technology (ISM), Dhanbad (2018)</li>
           <li>Shikha Singh, IIIT Delhi (2018)</li>
-          <li><a href="https://sites.google.com/a/iiitd.ac.in/megha-gupta/">Megha Gaur</a>, IIIT Delhi (2017-2018)</li>
+          <li><a href="https://sites.google.com/a/iiitd.ac.in/megha-gupta/" target="_blank">Megha Gaur</a>, IIIT Delhi (2017-2018)</li>
           <li>Xiwu Shang, Shanghai University, China (2016-17)</li>
           <li>Lijun Zhao, Beijing Jiaotong University, China (2016-17)</li>
           <li>Lei Liu, Beijing Jiaotong University, China (2014-16)</li>
           <li>Meiqin Liu, Beijing Jiaotong University, China (2014-15)</li>
           <li>Prof. Huihui Bai, Beijing Jiaotong University, China (2014-15)</li>
           <li>Kongfen Zhu, Taiyuan University of Science and Technology, China (2014-15)</li>
-          <li><a href="http://ihome.ust.hk/~leoman/">Pengfei Wan</a>, HKUST (2013)</li>
-          <li><a href="http://research.nii.ac.jp/~cheung/">Prof. Gene Cheung</a>, National Institute of Informatics, Japan (2012)</li>
-          <li><a href="http://klab.nii.ac.jp/~fengdragon/">Yunlong Feng</a>, National Institute of Informatics, Japan (2012)</li>
-          <li><a href="http://ipsl.kw.ac.kr/xe/index.php?mid=Members_DongGyuSim">Prof. Donggyu Sim</a>, Kwangwoon University, Korea (2011-2012)</li>
+          <li>Pengfei Wan, HKUST (2013)</li>
+          <li><a href="https://lassonde.yorku.ca/users/genecheung" target="_blank">Prof. Gene Cheung</a>, York University(2012)</li>
+          <li>Yunlong Feng, National Institute of Informatics, Japan (2012)</li>
+          <li><a href="http://ipsl.kw.ac.kr/xe/index.php?mid=Members_DongGyuSim" target="_blank">Prof. Donggyu Sim</a>, Kwangwoon University, Korea (2011-2012)</li>
           <li>Lili Meng, Beijing Jiaotong University, China (2010-11)</li>
           <li>Shaokun Guo, Northwestern Polytechnical University, China (2010)</li>
           <li>Prof. Jian Wang, Xi'an Technological University, China (2010)</li>
-          <li><a href="http://dance.arts.uci.edu/john-crawford">Prof. John Crawford</a>, UC Irvine (2008)</li>
+          <li><a href="http://dance.arts.uci.edu/john-crawford" target="_blank">Prof. John Crawford</a>, UC Irvine (2008)</li>
           <li>Lijie Liu, Johns Hopkins University (2005)</li>
         </ul>
         </div>

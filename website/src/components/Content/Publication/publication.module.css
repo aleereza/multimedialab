@@ -10,12 +10,14 @@
 } */
 
 .title{
-  color: #002145;
+  /* color: #002145; */
+  font-weight: bold; 
 }
 
-.authors {
+/* .authors {
   font-weight: bold;
-}
+} */
+
 .ref {
   font-style: italic;
 }

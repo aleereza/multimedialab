@@ -20,7 +20,7 @@ class Faculty extends React.Component {
             </div>
             <div className={styles.info_right_2}>
               <a className={styles.links} href={"mailto:"+this.props.email}>{this.props.email}</a>
-              <a className={styles.links} href={this.props.website}>{this.props.website}</a>
+              <a className={styles.links} href={this.props.website} target="_blank">{this.props.website}</a>
             </div>
           </div>
           <div className={styles.bio_right}>

@@ -1,8 +1,8 @@
 .container {
   /* background-color: silver; */
   overflow: hidden;
-  margin: 1rem;
-  border: 1px solid #54585A;
+  margin: 5rem;
+  border: 0px solid #54585A;
 }
 
 .image{
@@ -10,19 +10,21 @@
 }
 .text {
   flex: 2 1 0;
-  padding: 1rem;
+  padding: 0rem;
+  margin-left: 2rem;
 }
 .text h2{
-  margin: 0;
+  margin-bottom: 1;
 }
 .text h3{
-  margin: 1rem 0 .5rem 0; 
+  margin: 1rem 0 .5rem 0;
+  font-size: 0.9rem;  
 }
 .title{
   font-size: .8rem;
   color: dimgray;
-  line-height: 1.1rem;
-  margin-bottom: .5rem;
+  /*line-height: 1rem; */
+  margin-bottom: 1rem;
 }
 .text p{
   margin: 0rem;
