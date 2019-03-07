@@ -48,7 +48,7 @@ class PeoplePage extends React.Component {
 		</FacultySectionPeople>
         
 
-        <Heading text="Students"/>
+        <Heading text="Researchers"/>
         <div className={styles.studentstile_container}>
 
           {studentsdata.map((student,i) => (
@@ -75,7 +75,8 @@ class PeoplePage extends React.Component {
         <p>We are proud of our alumni. Most of them have gone on to join the leading tech companies, internationally (e.g., Amazon, Apple, Google, Microsoft) and locally (e.g., MDA, Broadcom, Sierra Wireless, AltumView Systems). A number of them have started their own companies, or chosen to pursue careers in academia.
         </p>
         <ul>
-          <li>Stephen Makonin (PostDoc 2017-18, now Adjunct Professor at SFU)</li>
+		  <li>Him Wai Ng (M.A.Sc. 2018, now with with AltumView Systems)</li>
+          <li><a href="http://www.makonin.com/" target="_blank">Stephen Makonin</a> (PostDoc 2017-18, now Adjunct Professor at SFU)</li>
           <li>Yijian Wang (M.A.Sc. 2017, now with SAP)</li>
           <li>James Lin (M.A.Sc. 2017, Co-Founder of KnowIdea)</li>
           <li>Hanieh Khalilian (Ph.D. 2016, now with MDA)</li>
@@ -93,7 +94,7 @@ class PeoplePage extends React.Component {
           <li>Victor Mateescu (M.A.Sc. 2014, now with MDA)</li>
           <li>Xiao Luo (M.A.Sc. 2014)</li>
           <li>Mehdi Seyfi (Ph.D. 2013, now with AltumView Systems)</li>
-          <li>Hadi Hadizadeh (Ph.D. 2013, now Assistant Professor at Quchan University of Technology)</li>
+          <li><a href="http://profile.qiet.ac.ir/hadizadeh/?lang=en" target="_blank">Hadi Hadizadeh</a> (Ph.D. 2013, now Assistant Professor at Quchan University of Technology)</li>
           <li>Simranjit Sidhu (B.A.Sc. 2013, now with Amazon)</li>
           <li>Yue-Meng Chen (M.A.Sc. 2007, Ph.D. 2012, Founder and CEO of HiCling)</li>
           <li>Moein Shayegannia (M.A.Sc. 2012, now Ph.D. student at the University of Toronto)</li>
@@ -115,9 +116,9 @@ class PeoplePage extends React.Component {
           <li>S. Mohsen Amiri (M.A.Sc. 2009, now with Google)</li>
           <li>Guoqian Sun (M.A.Sc. 2009, now with Apple)</li>
           <li>Myo Tun (PostDoc 2008, now with Avaya)</li>
-          <li>Sohail Bahmani (M.A.Sc. 2008, now PostDoc at GeorgiaTech)</li>
+          <li><a href="http://sbahmani.ece.gatech.edu/" target="_blank">Sohail Bahmani</a> (M.A.Sc. 2008, now PostDoc at GeorgiaTech)</li>
           <li>Duncan Chan (B.A.Sc. 2008, now with Microsoft)</li>
-          <li>Sunghoon Ivan Lee (B.A.Sc. 2008, now Assistant Professor at UMass-Amherst)</li>
+          <li><a href="https://www.cics.umass.edu/faculty/directory/lee-sunghoon" target="_blank">Sunghoon Ivan Lee</a> (B.A.Sc. 2008, now Assistant Professor at UMass-Amherst)</li>
           <li>Tong Jin (Ph.D. 2006, now with Teradici)</li>
           <li>Raymond Ngun (M.Eng. 2006, now with Broadcom)</li>
           <li>Victor Chan (M.Eng. 2006, now with MDA)</li>
@@ -140,6 +141,7 @@ class PeoplePage extends React.Component {
           <li><a href="https://github.com/harshanavkis" target="_blank">Harshavardhan Unnibhavi</a>, Indian Institute of Technology (ISM), Dhanbad (2018)</li>
           <li>Shikha Singh, IIIT Delhi (2018)</li>
           <li><a href="https://sites.google.com/a/iiitd.ac.in/megha-gupta/" target="_blank">Megha Gaur</a>, IIIT Delhi (2017-2018)</li>
+		  <li>Jian Jin, Beijing Jiaotong University, China (2016-18)</li>
           <li>Xiwu Shang, Shanghai University, China (2016-17)</li>
           <li>Lijun Zhao, Beijing Jiaotong University, China (2016-17)</li>
           <li>Lei Liu, Beijing Jiaotong University, China (2014-16)</li>

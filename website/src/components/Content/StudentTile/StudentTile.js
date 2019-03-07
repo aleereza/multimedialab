@@ -42,10 +42,10 @@ class StudentTile extends React.Component {
 
           <IconContext.Provider value={{ className: styles.icon, size: "1.5rem", color: "#007096"}}>
             <div>
-              <a className={displaywebsite} href={this.props.website}><FaExternalLinkSquareAlt/></a>
-              <a className={displayemail} href={this.props.email}><FaEnvelopeSquare/></a>
-              <a className={displaygithub} href={this.props.github}><FaGithubSquare/></a>
-              <a className={displaylinkedin} href={this.props.linkedin}><FaLinkedin/></a>
+              <a className={displaywebsite} href={this.props.website} target="_blank"><FaExternalLinkSquareAlt/></a>
+              <a className={displayemail} href={this.props.email} target="_blank"><FaEnvelopeSquare/></a>
+              <a className={displaygithub} href={this.props.github} target="_blank"><FaGithubSquare/></a>
+              <a className={displaylinkedin} href={this.props.linkedin} target="_blank"><FaLinkedin/></a>
             </div>
           </IconContext.Provider>
 
