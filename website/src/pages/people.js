@@ -82,23 +82,23 @@ class PeoplePage extends React.Component {
           <li>Hanieh Khalilian (Ph.D. 2016, now with MDA)</li>
           <li>Xing Wang (Ph.D. 2016, now with AltumView Systems)</li>
           <li>Dong Zhang (Ph.D. 2016, now with AltumView Systems)</li>
-          <li>Mehdi Stapleton (M.A.Sc. 2016, now with Vancouver Computer Vision)</li>
+          <li><a href="https://ca.linkedin.com/pub/mehdi-stapleton/42/861/291" target="_blank">Mehdi Stapleton</a> (M.A.Sc. 2016, now with Vancouver Computer Vision)</li>
           <li>Golara Javadi (M.A.Sc. 2016, now with ZE Power Engineering)</li>
           <li>Ravneet Sohi (M.Eng. 2016, now with Broadcom)</li>
-          <li>S. Hossein Khatoonabadi (Ph.D. 2015, now with PDFTron)</li>
+          <li><a href="http://ca.linkedin.com/in/hkhatoonabadi" target="_blank">S. Hossein Khatoonabadi</a> (Ph.D. 2015, now with PDFTron)</li>
           <li>Siyu Wu (M.A.Sc. 2015)</li>
           <li>Omar Alhussein (M.A.Sc. 2015, now Ph.D. student at the University of Waterloo)</li>
-          <li>Manjur Rashed (M.Eng. 2015, now with Broadcom)</li>
+          <li><a href="https://www.linkedin.com/in/manjurrashed" target="_blank">Manjur Rashed</a> (M.Eng. 2015, now with Broadcom)</li>
           <li>Steven Chen (M.Eng. 2015, now with Bendix CVS)</li>
           <li>Yu Gao (Ph.D. 2014, now with AltumView Systems)</li>
           <li>Victor Mateescu (M.A.Sc. 2014, now with MDA)</li>
           <li>Xiao Luo (M.A.Sc. 2014)</li>
           <li>Mehdi Seyfi (Ph.D. 2013, now with AltumView Systems)</li>
           <li><a href="http://profile.qiet.ac.ir/hadizadeh/?lang=en" target="_blank">Hadi Hadizadeh</a> (Ph.D. 2013, now Assistant Professor at Quchan University of Technology)</li>
-          <li>Simranjit Sidhu (B.A.Sc. 2013, now with Amazon)</li>
+          <li><a href="https://www.linkedin.com/in/sssidhu" target="_blank">Simranjit Sidhu</a> (B.A.Sc. 2013, now with Amazon)</li>
           <li>Yue-Meng Chen (M.A.Sc. 2007, Ph.D. 2012, Founder and CEO of HiCling)</li>
           <li>Moein Shayegannia (M.A.Sc. 2012, now Ph.D. student at the University of Toronto)</li>
-          <li>Simran Sarai (M.Eng. 2012, now with Schneider Electric)</li>
+          <li><a href="https://www.linkedin.com/in/simran-sarai-a2797710/" target="_blank">Simran Sarai</a> (M.Eng. 2012, now with Schneider Electric)</li>
           <li>Xiaoyu Xiu (Ph.D. 2011, now with InterDigital)</li>
           <li>Upul Samarawickrama (Ph.D. 2011, now with Microsoft)</li>
           <li>Parmida Beigi (M.A.Sc. 2011, now with Boeing)</li>
@@ -149,9 +149,12 @@ class PeoplePage extends React.Component {
           <li>Prof. Huihui Bai, Beijing Jiaotong University, China (2014-15)</li>
           <li>Kongfen Zhu, Taiyuan University of Science and Technology, China (2014-15)</li>
           <li>Pengfei Wan, HKUST (2013)</li>
-          <li><a href="https://lassonde.yorku.ca/users/genecheung" target="_blank">Prof. Gene Cheung</a>, York University(2012)</li>
+          <li><a href="https://lassonde.yorku.ca/users/genecheung" target="_blank">Prof. Gene Cheung</a>, York University (2012)</li>
           <li>Yunlong Feng, National Institute of Informatics, Japan (2012)</li>
           <li><a href="http://ipsl.kw.ac.kr/xe/index.php?mid=Members_DongGyuSim" target="_blank">Prof. Donggyu Sim</a>, Kwangwoon University, Korea (2011-2012)</li>
+		  <li><a href="https://www.researchgate.net/profile/Woong_Lim2" target="_blank">Woong Lim</a>, Kwangwoon University, Korea (2012-2013)</li>
+		  <li><a href="http://ipsl.kw.ac.kr/xe/index.php?mid=Members_KyungYeonMin" target="_blank">Kyung-Yeon Min</a>, Kwangwoon University, Korea (2011-2012)</li>
+		  <li><a href="https://www.researchgate.net/profile/Junghak_Nam" target="_blank">Jung-Hak Nam</a>, Kwangwoon University, Korea (2011-2012)</li>
           <li>Lili Meng, Beijing Jiaotong University, China (2010-11)</li>
           <li>Shaokun Guo, Northwestern Polytechnical University, China (2010)</li>
           <li>Prof. Jian Wang, Xi'an Technological University, China (2010)</li>
