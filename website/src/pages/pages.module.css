@@ -51,7 +51,8 @@ green: #1f7a1f #d6f5d6
 }
 .sponsortile{
   flex: 0 1 50%;
-  height: 10rem;
+  padding: 0 1rem 0 1rem;
+  /* height: 10rem; */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -68,3 +68,5 @@ export const sponsorsQuery = graphql`
     }
   }
 `
+
+//image={sponsorsimagesdata[sponsor.node.index].node.childImageSharp.sizes}
