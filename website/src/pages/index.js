@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
   // constructor(props) {
   //   super(props)
   // }
-
+  
   render() {
     const researchdata = this.props.data.allResearch.edges
     const researchimagesdata = this.props.data.allImages.edges
@@ -23,7 +23,6 @@ class IndexPage extends React.Component {
 
     return(
       <Layout>
-       
 
         <ResearchSection>
           {[0,1,2,3].map((i) => (

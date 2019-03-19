@@ -25,6 +25,8 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
+		<meta charSet="utf-8" />
+        <title>SFU Multimedia Lab</title>
         <Header yscroll={this.state.Yscroll}/>
         <Content yscroll={this.state.Yscroll}>
           {this.props.children}
