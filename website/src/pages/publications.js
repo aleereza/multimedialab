@@ -4,75 +4,12 @@ import Layout from '../components/Layout/Layout'
 import PubItem from '../components/Content/PubItem/PubItem'
 import PubItemGroup from '../components/Content/PubItem/PubItemGroup'
 import { graphql } from "gatsby"
-// import {Index} from "elasticlunr"
-import elasticlunr from "elasticlunr"
-import SearchBar from "../components/Content/SearchBar/SearchBar"
 
 class PublicationsPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      query: '',
-      results: [],
-    };
-  }
-
-  createIndex = () => {
-    var index = elasticlunr(function () {
-      this.addField('authors');
-      this.addField('title');
-      this.addField('year');
-      this.addField('month');
-      this.addField('reference');
-      this.setRef('index');
-    });
-    const publicationsdata = this.props.data.allPublications.edges
-    publicationsdata.forEach(function(publication) {
-      var doc = {
-          'index': publication.node.index,
-          'authors': publication.node.authors,
-          'title': publication.node.title,
-          'reference': publication.node.reference,
-          'month': publication.node.month,
-          'year': publication.node.year,
-          'type': publication.node.type,
-          'link1': publication.node.link1,
-          'link2': publication.node.link2,
-          'link1_name': publication.node.link1_name,
-          'link2_name': publication.node.link2_name,
-      };
-      index.addDoc(doc);
-    });
-    return index
-  }
-
-  getOrCreateIndex = () => this.index ? this.index : this.createIndex();
-
-  search = (evt) => {
-          const query = evt.target.value;
-          const config = {
-            fields: {
-                title: {boost: 2},
-                authors: {boost: 1},
-                reference: {boost: 1},
-                year: {boost: 1},
-                month: {boost: 1},
-            },
-            bool: "AND",
-            expand: true
-          }
-          this.index = this.getOrCreateIndex();
-          this.setState({
-              query,
-              // Query the index with search string to get an [] of IDs
-              results: this.index.search(query, config)
-                  // Map over each ID and return the full document
-                  .map(({ref,}) => this.index.documentStore.getDoc(ref)),});
-  }
 
   render() {
     // const publicationsdata = this.props.data.allPublications.edges
-	const publicationsdata_2019 = this.props.data.pub2019.edges
+    const publicationsdata_2019 = this.props.data.pub2019.edges
     const publicationsdata_2018 = this.props.data.pub2018.edges
     const publicationsdata_2017 = this.props.data.pub2017.edges
     const publicationsdata_2016 = this.props.data.pub2016.edges
@@ -80,16 +17,15 @@ class PublicationsPage extends React.Component {
     const publicationsdata_2014 = this.props.data.pub2014.edges
     const publicationsdata_2013 = this.props.data.pub2013.edges
 
-    if(this.state.query===''){
-      return(
+    return(
         <Layout>
           <div>
-            
-			<PubItemGroup
+
+			      <PubItemGroup
               year={"2019"}
               pubdata={publicationsdata_2019}
             />
-			
+
             <PubItemGroup
               year={"2018"}
               pubdata={publicationsdata_2018}
@@ -126,36 +62,6 @@ class PublicationsPage extends React.Component {
 
         </Layout>
       )
-    }
-    else{
-      return(
-        <Layout>
-          <div>
-            <SearchBar>
-              <input type="text" value={this.state.query} onChange={this.search}/>
-            </SearchBar>
-            <div className={styles.results_container}>
-            {this.state.results.map((r,i) => (
-              <PubItem key={i}
-              authors={r.authors}
-              title={r.title}
-              reference={r.reference}
-              reference_detail={r.reference_detail}
-              month={r.month}
-              year={r.year}
-              type={r.type}
-              link1={r.link1}
-              link2={r.link2}
-              link1_name={r.link1_name}
-              link2_name={r.link2_name}
-              />
-            ))}
-            </div>
-          </div>
-
-        </Layout>
-      )
-    }
 
   }
 }
@@ -187,7 +93,7 @@ query publicationsQuery {
       }
     }
   }
-  
+
   pub2019: allPublicationsCsv(
     filter: { year: { eq: "2019" } },
     sort: {fields: [index], order: ASC},
