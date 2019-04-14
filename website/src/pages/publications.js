@@ -21,7 +21,7 @@ class PublicationsPage extends React.Component {
     //find unique years in publications
     let years = [...new Set(publicationsdata.map(row => row.node.year))]
     //convert set to array to work with map function
-    years = Array.from(years[0])
+    years = Array.from(years[0]).sort().reverse();
 
     return(
         <Layout>
