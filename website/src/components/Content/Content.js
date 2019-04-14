@@ -9,17 +9,9 @@ class Content extends React.Component {
   // }
 
   render() {
-    // var title_height = 5.5 * this.getRootElementFontSize();
-    var title_height = 5.5 * 16;
-
-    var containerclass
-    containerclass = cx(styles.container, {
-      [styles.addpadding]: (this.props.yscroll >= title_height && this.props.winwidth > 992),
-      [styles.consttoppadding]: (this.props.winwidth <= 992),
-    });
 
     return (
-      <div className={containerclass}>
+      <div className={styles.container}>
         {this.props.children}
       </div>
     )

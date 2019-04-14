@@ -8,7 +8,7 @@
   -webkit-filter: grayscale(1);
 }
 .container:hover{
-  border: #A6192E 1px solid;
+  border: white 1px solid;
   filter: none;
   -webkit-filter: grayscale(0);
 }
