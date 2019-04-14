@@ -2,31 +2,32 @@ import React from 'react'
 import { graphql } from "gatsby"
 // import styles from "./pages.module.css"
 import Layout from '../components/Layout/Layout'
-import Research from "../components/Content/Research/Research"
+import Dataset from "../components/Content/Dataset/Dataset"
 
-class ResearchPage extends React.Component {
+class DataPage extends React.Component {
 
-  findpub(researchIndex) {
-    const all_research_publications = this.props.data.research_pubs.edges
-    var research_publications = all_research_publications.filter(function (row) {
-      return row.node.research == researchIndex;
+  findpub(datasetIndex) {
+    const all_dataset_publications = this.props.data.dataset_pubs.edges
+    var dataset_publications = all_dataset_publications.filter(function (row) {
+      return row.node.dataset == datasetIndex;
     });
-    return(research_publications)
+    return(dataset_publications)
   }
 
   render() {
-    const researchdata = this.props.data.allResearch.edges
-    const researchimagesdata = this.props.data.allImages.edges
+    const datasetsdata = this.props.data.allDatasets.edges
+    const datasetimagesdata = this.props.data.allImages.edges
 
     return(
       <Layout>
         <div>
 
-          {researchdata.map((row,i) => (
-            <Research key={i}
+          {datasetsdata.map((row,i) => (
+            <Dataset key={i}
             title={row.node.title}
-            long={row.node.long}
-            image={researchimagesdata[i].node.childImageSharp.sizes}
+            description={row.node.description}
+            link={row.node.link}
+            image={datasetimagesdata[i].node.childImageSharp.sizes}
     	      id={toString(row.node.index)}
             pubdata={this.findpub(row.node.index)}
             />
@@ -38,23 +39,24 @@ class ResearchPage extends React.Component {
   }
 }
 
-export default ResearchPage
+export default DataPage
 
 export const pageQuery = graphql`
   query {
 
-    allResearch: allResearchCsv {
+    allDatasets: allDatasetsCsv {
       edges {
         node {
           index
           title
-          long
+          description
+          link
         }
       }
     }
 
     allImages: allFile(
-      filter: { sourceInstanceName: { eq: "research_small" } },
+      filter: { sourceInstanceName: { eq: "datasets" } },
       sort: { order: ASC, fields: [name]},
     ){
       edges{
@@ -70,15 +72,15 @@ export const pageQuery = graphql`
       }
     }
 
-    # publications related to research 1
-    research_pubs: allPublicationsCsv(
-      filter: { research : { ne: "" } },
+    # publications related to datasets
+    dataset_pubs: allPublicationsCsv(
+      filter: { dataset : { ne: "" } },
       sort: {fields: [index], order: ASC},
     ){
       edges {
         node{
           index
-          research
+          dataset
           authors
           title
           reference

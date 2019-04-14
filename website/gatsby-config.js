@@ -47,6 +47,13 @@ module.exports = {
         path: `${__dirname}/src/images/logos/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `datasets`,
+        path: `${__dirname}/src/images/datasets/`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`
   ]
