@@ -15,8 +15,8 @@ class Dataset extends React.Component {
           <div className={styles.text}>
             <h2>{this.props.title}</h2>
             <p>{this.props.description}</p>
-            <p><a href={this.props.link}>Download dataset</a></p>
-            <h3>Selected Publications</h3>
+            <p><a href={this.props.link} target="_blank">Download dataset</a></p>
+            <h3>Related publications</h3>
             <PubItemGroupInResearch
             pubdata={this.props.pubdata}
             />
