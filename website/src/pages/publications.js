@@ -51,6 +51,7 @@ export default PublicationsPage
 export const publicationsQuery = graphql`
 query publicationsQuery {
   allPublications: allPublicationsCsv(
+    filter: { hidden: { ne: "1" } },
     sort: {fields: [index], order: ASC},
   ){
     edges {
@@ -59,14 +60,14 @@ query publicationsQuery {
         authors
         title
         reference
-	reference_detail
+        reference_detail
         month
         year
         type
         link1
         link2
-	link1_name
-	link2_name
+        link1_name
+        link2_name
       }
     }
   }
