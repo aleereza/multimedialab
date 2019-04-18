@@ -35,7 +35,14 @@ class NavBar extends React.Component {
           <div className={styles.container}>
             <div className={styles.container_inner}>
               <div className={styles.titlediv}>
-                <h1>Multimedia Lab</h1>
+                <h1>
+                <span className={styles.title_letter1}>M</span>
+                <span className={styles.title_letter2}>u</span>
+                <span className={styles.title_letter3}>l</span>
+                <span className={styles.title_letter4}>t</span>
+                <span className={styles.title_letter5}>i</span>
+                media Lab
+                </h1>
                 <p>School of Engineering Science</p>
               </div>
               <div className={styles.navdiv}>

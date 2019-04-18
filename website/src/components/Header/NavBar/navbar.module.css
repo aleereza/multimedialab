@@ -10,11 +10,6 @@
    opacity: 0.95;
 }
 
-/* .navcontainer {
-  width: 100%;
-  z-index: 10;
-} */
-
 .container_inner{
   max-width: 1280px;
   margin: auto;
@@ -41,17 +36,30 @@
   margin: 0;
   line-height: 1;
   font-size: 1.75rem;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 .titlediv p{
   margin: 0;
   line-height: 1;
 }
 
-/* The sticky class is added to the navbar when it reaches its scroll position */
-/* .sticky {
-  position: fixed;
-  top: 0;
-} */
+/*===== Title colors =====*/
+.title_letter1{
+  color: #ff0000;
+}
+.title_letter2{
+  color: #00BFFF;
+}
+.title_letter3{
+  color: #8000ff;
+}
+.title_letter4{
+  color: #009900;
+}
+.title_letter5{
+  color: #F4B400;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .navdiv {
