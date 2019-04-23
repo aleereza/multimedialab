@@ -36,14 +36,14 @@ class NavBar extends React.Component {
             <div className={styles.container_inner}>
               <div className={styles.titlediv}>
                 <h1>
-                <span className={styles.title_letter1}>M</span>
+                <span className={styles.title_letter1}>m</span>
                 <span className={styles.title_letter2}>u</span>
                 <span className={styles.title_letter3}>l</span>
                 <span className={styles.title_letter4}>t</span>
                 <span className={styles.title_letter5}>i</span>
-                media Lab
+                media lab
                 </h1>
-                <p>School of Engineering Science</p>
+                <p>school of engineering science</p>
               </div>
               <div className={styles.navdiv}>
                 {data.allNav.edges.map((row,i) => (
