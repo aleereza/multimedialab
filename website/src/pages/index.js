@@ -7,6 +7,7 @@ import PublicationsSection from "../components/Content/PublicationsSection/Publi
 import Publication from "../components/Content/Publication/Publication"
 import FacultyTile from "../components/Content/FacultyTile/FacultyTile"
 import FacultySection from "../components/Content/FacultySection/FacultySection"
+import News from "../components/Content/Publication/News"
 
 import styles from "./pages.module.css"
 
@@ -19,6 +20,7 @@ class IndexPage extends React.Component {
     const researchdata = this.props.data.allResearch.edges
     const researchimagesdata = this.props.data.allImages.edges
     const publicationsdata = this.props.data.selectedPublications.edges
+	const newsdata = this.props.data.selectedNews.edges
     const facultydata = this.props.data.allFaculty.edges
 
     return(
@@ -39,6 +41,16 @@ class IndexPage extends React.Component {
 	    
 	   <div className={styles.publications_section}>
            <PublicationsSection>
+		   {newsdata.map((row,i) => (
+			  <News
+                key={i}
+                title={newsdata[i].node.title}
+                month={newsdata[i].node.month}
+                year={newsdata[i].node.year}
+				link1={newsdata[i].node.link1}
+				link1_name={newsdata[i].node.link1_name}		
+              />
+			))}
             {publicationsdata.map((row,i) => (
               <Publication
                 key={i}
@@ -49,7 +61,7 @@ class IndexPage extends React.Component {
                 month={publicationsdata[i].node.month}
                 year={publicationsdata[i].node.year}
               />
-            ))}
+            ))}  
            </PublicationsSection>
            </div>
 
@@ -93,7 +105,7 @@ export const pageQuery = graphql`
   query {
 
     selectedPublications: allPublicationsCsv(
-      filter: { selected: { eq: "1" } },
+      filter: { type: { eq: "j" }, selected: { eq: "1" } },
       sort: {fields: [index], order: ASC},
     ){
       edges {
@@ -104,6 +116,21 @@ export const pageQuery = graphql`
 	  reference_detail
           month
           year
+        }
+      }
+    }
+	
+	selectedNews: allPublicationsCsv(
+      filter: { type: { eq: "n" }, selected: { eq: "1" } },
+      sort: {fields: [index], order: ASC},
+    ){
+      edges {
+        node {
+          title
+	      month
+          year
+		  link1
+		  link1_name
         }
       }
     }
