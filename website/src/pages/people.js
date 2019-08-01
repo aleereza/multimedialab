@@ -72,17 +72,17 @@ class PeoplePage extends React.Component {
 
         <Heading text="Alumni"/>
         <div className={styles.alumni_container}>
-        <p>We are proud of our alumni. Most of them have gone on to join the leading tech companies, internationally (e.g., Amazon, Apple, Google, Microsoft) and locally (e.g., MDA, Broadcom, Sierra Wireless, AltumView Systems). A number of them have started their own companies, or chosen to pursue careers in academia.
+        <p>We are proud of our alumni. Among them are winners of national scholarships, convocation medals, and paper awards. Most of them have gone on to join the leading tech companies, internationally and locally. A number of them have started their own companies, or chosen to pursue careers in academia.
         </p>
         <ul>
 		  <li>Him Wai Ng (M.A.Sc. 2018, now with with AltumView Systems)</li>
           <li><a href="http://www.makonin.com/" target="_blank">Stephen Makonin</a> (PostDoc 2017-18, now Adjunct Professor at SFU)</li>
           <li>Yijian Wang (M.A.Sc. 2017, now with SAP)</li>
           <li>James Lin (M.A.Sc. 2017, Co-Founder of KnowIdea)</li>
-          <li>Hanieh Khalilian (Ph.D. 2016, now with MDA)</li>
+          <li>Hanieh Khalilian (Ph.D. 2016, now with Kodak)</li>
           <li>Xing Wang (Ph.D. 2016, now with AltumView Systems)</li>
           <li>Dong Zhang (Ph.D. 2016, now with AltumView Systems)</li>
-          <li><a href="https://ca.linkedin.com/pub/mehdi-stapleton/42/861/291" target="_blank">Mehdi Stapleton</a> (M.A.Sc. 2016, now with Vancouver Computer Vision)</li>
+          <li><a href="https://ca.linkedin.com/pub/mehdi-stapleton/42/861/291" target="_blank">Mehdi Stapleton</a> (M.A.Sc. 2016, now with TU Graz, Austria)</li>
           <li>Golara Javadi (M.A.Sc. 2016, now with ZE Power Engineering)</li>
           <li>Ravneet Sohi (M.Eng. 2016, now with Broadcom)</li>
           <li><a href="http://ca.linkedin.com/in/hkhatoonabadi" target="_blank">S. Hossein Khatoonabadi</a> (Ph.D. 2015, now with PDFTron)</li>
@@ -111,9 +111,9 @@ class PeoplePage extends React.Component {
           <li>Mario Enriquez (PostDoc 2009-10, now R&D Manager at Amway)</li>
           <li>Jing Wang (Ph.D. 2010, now with GigPeak)</li>
           <li>Hongfei Du (PostDoc 2008-2009, now with InterDigital)</li>
-          <li>Mahin Torki (M.A.Sc. 2009, now with Microsoft)</li>
+          <li>Mahin Torki (M.A.Sc. 2009, now with Amazon)</li>
           <li>Derek Pang (B.A.Sc. 2009, now with Lytro)</li>
-          <li>S. Mohsen Amiri (M.A.Sc. 2009, now with Google)</li>
+          <li>S. Mohsen Amiri (M.A.Sc. 2009, now with Postmates)</li>
           <li>Guoqian Sun (M.A.Sc. 2009, now with Apple)</li>
           <li>Myo Tun (PostDoc 2008, now with Avaya)</li>
           <li><a href="http://sbahmani.ece.gatech.edu/" target="_blank">Sohail Bahmani</a> (M.A.Sc. 2008, now PostDoc at GeorgiaTech)</li>
