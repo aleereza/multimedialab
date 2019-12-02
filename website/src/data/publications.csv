@@ -1,5 +1,5 @@
 index,authors,title,reference,reference_detail,month,month_num,year,type,selected,research,dataset,hidden,link1,link1_name,link2,link2_name
-001,"J. Fu, I. V. Bajić, and R. G. Vaughan",Datasets for face and object detection in fisheye images,Data in Brief,"vol. 27, article no. 104752",Dec.,12,2019,j,,,1,1,https://doi.org/10.1016/j.dib.2019.104752,DOI,http://dx.doi.org/10.25314/ca0092b1-1e87-4928-b5f5-ebae30decb8d,data
+001,"J. Fu, I. V. Bajić, and R. G. Vaughan",Datasets for face and object detection in fisheye images,Data in Brief,"vol. 27, article no. 104752",Dec.,12,2019,j,,,1,,https://doi.org/10.1016/j.dib.2019.104752,DOI,http://dx.doi.org/10.25314/ca0092b1-1e87-4928-b5f5-ebae30decb8d,data
 002,"J. Fu, I. V. Bajić, and R. G. Vaughan",Datasets for face and object detection in fisheye images,Data in Brief,"vol. 27, article no. 104752",Dec.,12,2019,j,,,2,1,https://doi.org/10.1016/j.dib.2019.104752,DOI,https://researchdata.sfu.ca/pydio_public/c09804,data
 003,,SFU students' AI solution shields against video voyeurs,,,Jul,7,2019,n,1,,,1,https://www.sfu.ca/sfunews/stories/2019/07/sfu-students-ai-solution-shields-against-video-voyeurs.html,SFU News,,
 004,,Shutting down online surveillance,,,,7,2019,n,1,,,1,https://www.cbc.ca/listen/live-radio/1-81-airplay/clip/15727082-shutting-down-online-surveillance,CBC Radio,,
