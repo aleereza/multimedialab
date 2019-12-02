@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from "./facultytile.module.css"
-import Img from "gatsby-image"
+import React from "react";
+import styles from "./facultytile.module.css";
+import Img from "gatsby-image";
 import { FaChevronRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
@@ -9,7 +9,7 @@ class FacultyTile extends React.Component {
     return (
       <div className={styles.container}>
         <div className={styles.image}>
-          <Img sizes={this.props.image}/>
+          <Img sizes={this.props.image} />
         </div>
         <div className={styles.text}>
           <h2>{this.props.name}</h2>
@@ -21,19 +21,25 @@ class FacultyTile extends React.Component {
             <li>{this.props.research3}</li>
           </ul>
           <div className={styles.more_container}>
-            <IconContext.Provider value={{className: styles.icon, size: ".7rem", color: "silver"}}>
+            <IconContext.Provider
+              value={{ className: styles.icon, size: ".7rem", color: "silver" }}
+            >
               <div>
-                <a href={this.props.website} target="_blank"><small className={styles.more}>website </small><FaChevronRight/></a>
+                <a
+                  href={this.props.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <small className={styles.more}>website </small>
+                  <FaChevronRight />
+                </a>
               </div>
             </IconContext.Provider>
           </div>
- 
         </div>
       </div>
     );
   }
 }
 
-export default FacultyTile
-
-// <Img fluid={props.image.fluid} backgroundColor={'#eeeeee'} />
+export default FacultyTile;

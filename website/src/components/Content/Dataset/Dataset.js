@@ -16,7 +16,11 @@ class Dataset extends React.Component {
             <h2>{this.props.title}</h2>
             <p>{this.props.description}</p>
             <p>
-              <a href={this.props.link} target="_blank">
+              <a
+                href={this.props.link}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Download dataset
               </a>
             </p>

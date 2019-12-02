@@ -3,7 +3,6 @@ import styles from "./pages.module.css";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout/Layout";
 import StudentTile from "../components/Content/StudentTile/StudentTile";
-import Faculty from "../components/Content/Faculty/Faculty";
 import Heading from "../components/Content/Heading/Heading";
 import FacultySectionPeople from "../components/Content/FacultySectionPeople/FacultySectionPeople";
 import FacultyTile from "../components/Content/FacultyTile/FacultyTile";
@@ -79,7 +78,11 @@ class PeoplePage extends React.Component {
           <ul>
             <li>Him Wai Ng (M.A.Sc. 2018, now with with AltumView Systems)</li>
             <li>
-              <a href="http://www.makonin.com/" target="_blank">
+              <a
+                href="http://www.makonin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Stephen Makonin
               </a>{" "}
               (PostDoc 2017-18, now Adjunct Professor at SFU)
@@ -93,6 +96,7 @@ class PeoplePage extends React.Component {
               <a
                 href="https://ca.linkedin.com/pub/mehdi-stapleton/42/861/291"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Mehdi Stapleton
               </a>{" "}
@@ -101,7 +105,11 @@ class PeoplePage extends React.Component {
             <li>Golara Javadi (M.A.Sc. 2016, now with ZE Power Engineering)</li>
             <li>Ravneet Sohi (M.Eng. 2016, now with Broadcom)</li>
             <li>
-              <a href="http://ca.linkedin.com/in/hkhatoonabadi" target="_blank">
+              <a
+                href="http://ca.linkedin.com/in/hkhatoonabadi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 S. Hossein Khatoonabadi
               </a>{" "}
               (Ph.D. 2015, now with PDFTron)
@@ -115,6 +123,7 @@ class PeoplePage extends React.Component {
               <a
                 href="https://www.linkedin.com/in/manjurrashed"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Manjur Rashed
               </a>{" "}
@@ -129,6 +138,7 @@ class PeoplePage extends React.Component {
               <a
                 href="http://profile.qiet.ac.ir/hadizadeh/?lang=en"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Hadi Hadizadeh
               </a>{" "}
@@ -136,7 +146,11 @@ class PeoplePage extends React.Component {
               Technology)
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/sssidhu" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/sssidhu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Simranjit Sidhu
               </a>{" "}
               (B.A.Sc. 2013, now with Amazon)
@@ -153,6 +167,7 @@ class PeoplePage extends React.Component {
               <a
                 href="https://www.linkedin.com/in/simran-sarai-a2797710/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Simran Sarai
               </a>{" "}
@@ -184,7 +199,11 @@ class PeoplePage extends React.Component {
             <li>Guoqian Sun (M.A.Sc. 2009, now with Apple)</li>
             <li>Myo Tun (PostDoc 2008, now with Avaya)</li>
             <li>
-              <a href="http://sbahmani.ece.gatech.edu/" target="_blank">
+              <a
+                href="http://sbahmani.ece.gatech.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Sohail Bahmani
               </a>{" "}
               (M.A.Sc. 2008, now PostDoc at GeorgiaTech)
@@ -194,6 +213,7 @@ class PeoplePage extends React.Component {
               <a
                 href="https://www.cics.umass.edu/faculty/directory/lee-sunghoon"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Sunghoon Ivan Lee
               </a>{" "}
@@ -208,7 +228,11 @@ class PeoplePage extends React.Component {
           <ul>
             <li>Chen Ji (M.A.Sc. 2001)</li>
             <li>
-              <a href="http://www.kpsuba.com/" target="_blank">
+              <a
+                href="http://www.kpsuba.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 K.P. Subbalakshmi
               </a>{" "}
               (Ph.D. 2000, now Professor at Stevens Institute of Technology)
@@ -232,7 +256,11 @@ class PeoplePage extends React.Component {
               China (2018-2019)
             </li>
             <li>
-              <a href="https://github.com/harshanavkis" target="_blank">
+              <a
+                href="https://github.com/harshanavkis"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Harshavardhan Unnibhavi
               </a>
               , Indian Institute of Technology (ISM), Dhanbad (2018)
@@ -242,6 +270,7 @@ class PeoplePage extends React.Component {
               <a
                 href="https://sites.google.com/a/iiitd.ac.in/megha-gupta/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Megha Gaur
               </a>
@@ -264,6 +293,7 @@ class PeoplePage extends React.Component {
               <a
                 href="https://lassonde.yorku.ca/users/genecheung"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Prof. Gene Cheung
               </a>
@@ -276,6 +306,7 @@ class PeoplePage extends React.Component {
               <a
                 href="http://ipsl.kw.ac.kr/xe/index.php?mid=Members_DongGyuSim"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Prof. Donggyu Sim
               </a>
@@ -285,6 +316,7 @@ class PeoplePage extends React.Component {
               <a
                 href="https://www.researchgate.net/profile/Woong_Lim2"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Woong Lim
               </a>
@@ -294,6 +326,7 @@ class PeoplePage extends React.Component {
               <a
                 href="http://ipsl.kw.ac.kr/xe/index.php?mid=Members_KyungYeonMin"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Kyung-Yeon Min
               </a>
@@ -303,6 +336,7 @@ class PeoplePage extends React.Component {
               <a
                 href="https://www.researchgate.net/profile/Junghak_Nam"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Jung-Hak Nam
               </a>
@@ -316,7 +350,11 @@ class PeoplePage extends React.Component {
               Prof. Jian Wang, Xi'an Technological University, China (2010)
             </li>
             <li>
-              <a href="http://dance.arts.uci.edu/john-crawford" target="_blank">
+              <a
+                href="http://dance.arts.uci.edu/john-crawford"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Prof. John Crawford
               </a>
               , UC Irvine (2008)

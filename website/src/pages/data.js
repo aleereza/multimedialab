@@ -8,7 +8,7 @@ class DataPage extends React.Component {
   findpub(datasetIndex) {
     const all_dataset_publications = this.props.data.dataset_pubs.edges;
     var dataset_publications = all_dataset_publications.filter(function(row) {
-      return row.node.dataset == datasetIndex;
+      return row.node.dataset === datasetIndex;
     });
     return dataset_publications;
   }

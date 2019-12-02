@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-// import styles from "./pages.module.css"
 import Layout from "../components/Layout/Layout";
 import Research from "../components/Content/Research/Research";
 
@@ -8,7 +7,7 @@ class ResearchPage extends React.Component {
   findpub(researchIndex) {
     const all_research_publications = this.props.data.research_pubs.edges;
     var research_publications = all_research_publications.filter(function(row) {
-      return row.node.research == researchIndex;
+      return row.node.research === researchIndex;
     });
     return research_publications;
   }

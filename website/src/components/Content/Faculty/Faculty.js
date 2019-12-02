@@ -26,6 +26,7 @@ class Faculty extends React.Component {
                   className={styles.links}
                   href={this.props.website}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {this.props.website}
                 </a>

@@ -47,6 +47,7 @@ class StudentTile extends React.Component {
                 className={displaywebsite}
                 href={this.props.website}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaExternalLinkSquareAlt />
               </a>
@@ -54,6 +55,7 @@ class StudentTile extends React.Component {
                 className={displayemail}
                 href={this.props.email}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaEnvelopeSquare />
               </a>
@@ -61,6 +63,7 @@ class StudentTile extends React.Component {
                 className={displaygithub}
                 href={this.props.github}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaGithubSquare />
               </a>
@@ -68,6 +71,7 @@ class StudentTile extends React.Component {
                 className={displaylinkedin}
                 href={this.props.linkedin}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin />
               </a>
