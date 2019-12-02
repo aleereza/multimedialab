@@ -1,49 +1,46 @@
-import React from 'react'
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 // import styles from "./pages.module.css"
-import Layout from '../components/Layout/Layout'
-import Dataset from "../components/Content/Dataset/Dataset"
+import Layout from "../components/Layout/Layout";
+import Dataset from "../components/Content/Dataset/Dataset";
 
 class DataPage extends React.Component {
-
   findpub(datasetIndex) {
-    const all_dataset_publications = this.props.data.dataset_pubs.edges
-    var dataset_publications = all_dataset_publications.filter(function (row) {
+    const all_dataset_publications = this.props.data.dataset_pubs.edges;
+    var dataset_publications = all_dataset_publications.filter(function(row) {
       return row.node.dataset == datasetIndex;
     });
-    return(dataset_publications)
+    return dataset_publications;
   }
 
   render() {
-    const datasetsdata = this.props.data.allDatasets.edges
-    const datasetimagesdata = this.props.data.allImages.edges
+    const datasetsdata = this.props.data.allDatasets.edges;
+    const datasetimagesdata = this.props.data.allImages.edges;
 
-    return(
+    return (
       <Layout>
         <div>
-
-          {datasetsdata.map((row,i) => (
-            <Dataset key={i}
-            title={row.node.title}
-            description={row.node.description}
-            link={row.node.link}
-            image={datasetimagesdata[i].node.childImageSharp.sizes}
-    	      id={toString(row.node.index)}
-            pubdata={this.findpub(row.node.index)}
+          {datasetsdata.map((row, i) => (
+            <Dataset
+              key={i}
+              title={row.node.title}
+              description={row.node.description}
+              link={row.node.link}
+              image={datasetimagesdata[i].node.childImageSharp.fluid}
+              id={toString(row.node.index)}
+              pubdata={this.findpub(row.node.index)}
             />
           ))}
-
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default DataPage
+export default DataPage;
 
 export const pageQuery = graphql`
   query {
-
     allDatasets: allDatasetsCsv {
       edges {
         node {
@@ -56,16 +53,16 @@ export const pageQuery = graphql`
     }
 
     allImages: allFile(
-      filter: { sourceInstanceName: { eq: "datasets" } },
-      sort: { order: ASC, fields: [name]},
-    ){
-      edges{
+      filter: { sourceInstanceName: { eq: "datasets" } }
+      sort: { order: ASC, fields: [name] }
+    ) {
+      edges {
         node {
           childImageSharp {
             # Specify the image processing specifications right in the query.
             # Makes it trivial to update as your page's design changes.
-            sizes(maxWidth: 1280) {
-              ...GatsbyImageSharpSizes_tracedSVG
+            fluid(maxWidth: 1280) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
@@ -74,11 +71,11 @@ export const pageQuery = graphql`
 
     # publications related to datasets
     dataset_pubs: allPublicationsCsv(
-      filter: { dataset : { ne: "" } },
-      sort: {fields: [index], order: ASC},
-    ){
+      filter: { dataset: { ne: "" } }
+      sort: { fields: [index], order: ASC }
+    ) {
       edges {
-        node{
+        node {
           index
           dataset
           authors
@@ -94,6 +91,5 @@ export const pageQuery = graphql`
         }
       }
     }
-
   }
 `;

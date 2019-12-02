@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
               index={researchdata[i].node.index}
               title={researchdata[i].node.title}
               short={researchdata[i].node.short}
-              image={researchimagesdata[i].node.childImageSharp.sizes}
+              image={researchimagesdata[i].node.childImageSharp.fluid}
             />
           ))}
         </ResearchSection>
@@ -69,7 +69,7 @@ class IndexPage extends React.Component {
             <FacultyTile
               name={facultydata[0].node.name}
               title={facultydata[0].node.title}
-              image={this.props.data.IvanImg.childImageSharp.sizes}
+              image={this.props.data.IvanImg.childImageSharp.fluid}
               website={facultydata[0].node.website}
               research1={facultydata[0].node.research1}
               research2={facultydata[0].node.research2}
@@ -78,7 +78,7 @@ class IndexPage extends React.Component {
             <FacultyTile
               name={facultydata[1].node.name}
               title={facultydata[1].node.title}
-              image={this.props.data.JieImg.childImageSharp.sizes}
+              image={this.props.data.JieImg.childImageSharp.fluid}
               website={facultydata[1].node.website}
               research1={facultydata[1].node.research1}
               research2={facultydata[1].node.research2}
@@ -87,7 +87,7 @@ class IndexPage extends React.Component {
             <FacultyTile
               name={facultydata[2].node.name}
               title={facultydata[2].node.title}
-              image={this.props.data.AtousaImg.childImageSharp.sizes}
+              image={this.props.data.AtousaImg.childImageSharp.fluid}
               website={facultydata[2].node.website}
               research1={facultydata[2].node.research1}
               research2={facultydata[2].node.research2}
@@ -168,8 +168,8 @@ export const pageQuery = graphql`
           childImageSharp {
             # Specify the image processing specifications right in the query.
             # Makes it trivial to update as your page's design changes.
-            sizes(maxWidth: 1280) {
-              ...GatsbyImageSharpSizes_tracedSVG
+            fluid(maxWidth: 1280) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
@@ -180,8 +180,8 @@ export const pageQuery = graphql`
     childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        sizes(maxWidth: 600) {
-          ...GatsbyImageSharpSizes_tracedSVG
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
@@ -189,8 +189,8 @@ export const pageQuery = graphql`
     childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        sizes(maxWidth: 600) {
-          ...GatsbyImageSharpSizes_tracedSVG
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
@@ -198,8 +198,8 @@ export const pageQuery = graphql`
     childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        sizes(maxWidth: 600) {
-          ...GatsbyImageSharpSizes_tracedSVG
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

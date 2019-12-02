@@ -22,7 +22,7 @@ class SponsorsPage extends React.Component {
 
                 <SponsorTile
                   link={sponsor.node.link}
-                  image={sponsorsimagesdata[sponsor.node.index].node.childImageSharp.sizes}
+                  image={sponsorsimagesdata[sponsor.node.index].node.childImageSharp.fluid}
                 />
 
               </div>
@@ -59,8 +59,8 @@ export const sponsorsQuery = graphql`
           childImageSharp {
             # Specify the image processing specifications right in the query.
             # Makes it trivial to update as your page's design changes.
-            sizes(maxWidth: 640) {
-              ...GatsbyImageSharpSizes_tracedSVG
+            fluid(maxWidth: 640) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
@@ -69,4 +69,4 @@ export const sponsorsQuery = graphql`
   }
 `
 
-//image={sponsorsimagesdata[sponsor.node.index].node.childImageSharp.sizes}
+//image={sponsorsimagesdata[sponsor.node.index].node.childImageSharp.fluid}
