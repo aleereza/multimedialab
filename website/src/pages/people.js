@@ -76,6 +76,32 @@ class PeoplePage extends React.Component {
             chosen to pursue careers in academia.
           </p>
           <ul>
+		    <li><a
+                href="https://www.linkedin.com/in/mohammad-akbari-89868b4a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mohammad Akbari
+              </a>{" "} 
+			  (Ph.D. 2020, Co-Founder and CTO, DeepNamer)</li>
+			<li><a
+                href="http://www.sfu.ca/~jfa49/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Arlene Fu
+              </a>{" "}
+			  (M.A.Sc. 2020, Software & AI Developer, Intutive AI)</li>  
+			<li>Lior Bragilevsky (M.A.Sc. 2020)</li>
+			<li>Yunus Khan (M.Eng. 2020)</li>
+			<li><a
+                href="https://www.linkedin.com/in/elham-ideli-9698987a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Elham Ideli
+              </a>{" "}
+			  (M.A.Sc. 2019, Machine Learning Engineer at Singular Software)</li>
             <li>Him Wai Ng (M.A.Sc. 2018, now with with AltumView Systems)</li>
             <li>
               <a
@@ -249,6 +275,9 @@ class PeoplePage extends React.Component {
         <div className={styles.visitors_container}>
           <ul>
             <li>
+              Mai Kimura, Tottori University (2020)
+            </li>
+			<li>
               Prof. Yanshan Xiao, China Three Gorges University (2018-2019)
             </li>
             <li>
