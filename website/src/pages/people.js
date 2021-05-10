@@ -83,7 +83,7 @@ class PeoplePage extends React.Component {
               >
                 Mohammad Akbari
               </a>{" "} 
-			  (Ph.D. 2020, Co-Founder and CTO, DeepNamer)</li>
+			  (Ph.D. 2020, Research Scientist at Huawei)</li>
 			<li><a
                 href="http://www.sfu.ca/~jfa49/"
                 target="_blank"
@@ -93,7 +93,7 @@ class PeoplePage extends React.Component {
               </a>{" "}
 			  (M.A.Sc. 2020, Software & AI Developer, Intutive AI)</li>  
 			<li>Lior Bragilevsky (M.A.Sc. 2020)</li>
-			<li>Yunus Khan (M.Eng. 2020)</li>
+			<li>Yunus Khan (M.Eng. 2020, Data Scientist at the University of Regina)</li>
 			<li><a
                 href="https://www.linkedin.com/in/elham-ideli-9698987a/"
                 target="_blank"
