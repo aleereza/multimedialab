@@ -77,6 +77,30 @@ class PeoplePage extends React.Component {
           </p>
           <ul>
 		    <li><a
+                href="https://www.linkedin.com/in/robert-a-cohen/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Robert A. Cohen
+              </a>{" "} 
+			  (Senior Research Scientist, 2019-2021, Senior Compression Engineer at Unity Technologies)</li>
+			<li><a
+                href="https://ashivdhondea.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ashiv Hans Dhondea
+              </a>{" "} 
+			  (M.Eng. 2021)</li>
+			<li><a
+                href="https://www.linkedin.com/in/takehiro-tanaka-871493163/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Takehiro Tanaka
+              </a>{" "} 
+			  (B.A.Sc. 2021)</li>  
+		    <li><a
                 href="https://www.linkedin.com/in/mohammad-akbari-89868b4a/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -91,7 +115,7 @@ class PeoplePage extends React.Component {
               >
                 Arlene Fu
               </a>{" "}
-			  (M.A.Sc. 2020, Software & AI Developer, Intutive AI)</li>  
+			  (M.A.Sc. 2020, Intelligent Video Algorithm Researcher at SenseTime)</li>  
 			<li>Lior Bragilevsky (M.A.Sc. 2020)</li>
 			<li>Yunus Khan (M.Eng. 2020, Data Scientist at the University of Regina)</li>
 			<li><a
