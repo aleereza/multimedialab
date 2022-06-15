@@ -70,12 +70,28 @@ class PeoplePage extends React.Component {
         <div className={styles.alumni_container}>
           <p>
             We are proud of our alumni. Among them are winners of national
-            scholarships, convocation medals, and paper awards. Most of them
+            scholarships, Governor General's and convocation medals, and paper awards. Most of them
             have gone on to join the leading tech companies, internationally and
             locally. A number of them have started their own companies, or
             chosen to pursue careers in academia.
           </p>
           <ul>
+			<li><a
+                href="https://www.linkedin.com/in/saeed-ranjbar-alvar-6a010a29/?originalSubdomain=ca"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saeed Ranjbar Alvar
+              </a>{" "} 
+			  (Ph.D. 2022, AI Researcher at Huawei)</li>
+		    <li><a
+                href="https://www.linkedin.com/in/hyomin-choi-9a1676107/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hyomin Choi
+              </a>{" "} 
+			  (Ph.D. 2022, AI Researcher at InterDigital)</li>
 		    <li><a
                 href="https://www.linkedin.com/in/robert-a-cohen/"
                 target="_blank"
@@ -91,7 +107,7 @@ class PeoplePage extends React.Component {
               >
                 Ashiv Hans Dhondea
               </a>{" "} 
-			  (M.Eng. 2021)</li>
+			  (M.Eng. 2021, 3D Graphics Engineer at Niricson)</li>
 			<li><a
                 href="https://www.linkedin.com/in/takehiro-tanaka-871493163/"
                 target="_blank"
@@ -99,7 +115,7 @@ class PeoplePage extends React.Component {
               >
                 Takehiro Tanaka
               </a>{" "} 
-			  (B.A.Sc. 2021)</li>  
+			  (B.A.Sc. 2021, Software Engineer at Fortinet)</li>  
 		    <li><a
                 href="https://www.linkedin.com/in/mohammad-akbari-89868b4a/"
                 target="_blank"
