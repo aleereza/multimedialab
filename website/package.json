@@ -10,7 +10,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "elasticlunr": "^0.9.5",
-    "gatsby": "^2.18.5",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-lodash": "^3.0.4",
     "gatsby-plugin-react-helmet": "^3.0.12",
