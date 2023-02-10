@@ -77,6 +77,14 @@ class PeoplePage extends React.Component {
           </p>
           <ul>
 			<li><a
+                href="https://www.linkedin.com/in/paige-rattenberry/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Paige Rattenberry
+              </a>{" "} 
+			  (B.A.Sc. 2022, Software Engineer at Microsoft)</li>
+			<li><a
                 href="https://www.linkedin.com/in/saeed-ranjbar-alvar-6a010a29/?originalSubdomain=ca"
                 target="_blank"
                 rel="noopener noreferrer"
